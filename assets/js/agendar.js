@@ -15,7 +15,6 @@
     project_type: "summaryProject",
     placement: "summaryPlacement",
     scale: "summaryScale",
-    selected_artist: "summaryArtist",
     shift: "summaryShift"
   };
 
@@ -416,13 +415,6 @@
   if (tipo) {
     var typeInput = form.querySelector('input[name="project_type"][value="' + tipo + '"]');
     if (typeInput) typeInput.checked = true;
-  }
-
-  var artista = params.get("artista");
-  if (artista) {
-    form.querySelectorAll('input[name="selected_artist"]').forEach(function (input) {
-      if (input.value.toLowerCase().indexOf(artista.toLowerCase()) !== -1) input.checked = true;
-    });
   }
 
   var pieza = params.get("pieza");

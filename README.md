@@ -10,7 +10,7 @@ El formulario de cita no usa backend: valida los datos en el cliente y abre What
 |---|---|
 | `index.html` | Hero, estilos del atelier, obras destacadas, manifiesto, testimonios, CTA |
 | `portafolio.html` | Galería con filtros (`Todos / Blackwork / Dark Realism / Ornamental / Flash`), lightbox y botón *Apartar* |
-| `artistas.html` | Harry Duarte, Valeria K., Mateo Thorne + filosofía y proceso |
+| `artistas.html` | Harry Duarte (único artista del atelier), trayectoria, filosofía y proceso |
 | `cuidados.html` | Cicatrización fase por fase, señales de alarma, FAQ y protocolo |
 | `agendar.html` | Solicitud de cita en 4 pasos: tipo de obra → detalles → fecha/artista → contacto y confirmación |
 

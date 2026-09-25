@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agendar Cita — Harry Duarte Tattoo Atelier</title>
-<meta name="description" content="Solicitud de cita en el atelier privado de Harry Duarte, Valera, Estado Trujillo. Elige tipo de obra, zona, artista, fecha y turno: confirmación por WhatsApp.">
+<meta name="description" content="Solicitud de cita en el atelier privado de Harry Duarte, Valera, Estado Trujillo. Elige tipo de obra, zona, fecha y turno: confirmación por WhatsApp.">
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
     <nav class="hidden xl:flex items-center gap-1 neu-inset px-3 py-1.5 rounded-full">
       <a class="nav-link" href="index.html">Inicio</a>
       <a class="nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
-      <a class="nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+      <a class="nav-link" href="artistas.html">Artista &amp; Filosofía</a>
       <a class="nav-link" href="cuidados.html">Cuidados</a>
     </nav>
     <div class="flex items-center gap-3 shrink-0">
@@ -56,7 +56,7 @@
     </div>
     <a class="mobile-nav-link" href="index.html">Inicio</a>
     <a class="mobile-nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
-    <a class="mobile-nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+    <a class="mobile-nav-link" href="artistas.html">Artista &amp; Filosofía</a>
     <a class="mobile-nav-link" href="cuidados.html">Cuidados</a>
     <a class="mobile-nav-link is-active mt-4 neu-button-primary justify-center text-white hover:text-accent" href="agendar.html">Agendar Cita</a>
     <a class="mobile-nav-link mt-auto justify-center" href="https://wa.me/584120537930" target="_blank" rel="noopener">WhatsApp +58 412 053 7930</a>
@@ -101,7 +101,7 @@
         </button>
         <button type="button" class="step-tab text-left p-3 rounded-xl transition-all neu-flat text-muted hover:text-white" data-step-indicator="3">
           <p class="text-[10px] uppercase opacity-75">Fase 03</p>
-          <p class="text-[0.7rem] uppercase tracking-wider font-semibold">Fecha &amp; artista</p>
+          <p class="text-[0.7rem] uppercase tracking-wider font-semibold">Fecha &amp; sesión</p>
         </button>
         <button type="button" class="step-tab text-left p-3 rounded-xl transition-all neu-flat text-muted hover:text-white" data-step-indicator="4">
           <p class="text-[10px] uppercase opacity-75">Fase 04</p>
@@ -351,52 +351,21 @@
       <section class="step-pane hidden flex-col gap-8" id="step-3">
         <div class="flex flex-col gap-2">
           <span class="text-[10px] uppercase text-outline tracking-widest">[ 03 — Disponibilidad ]</span>
-          <h2 class="font-display text-2xl md:text-3xl text-white uppercase">Selección de artista &amp; calendario</h2>
+          <h2 class="font-display text-2xl md:text-3xl text-white uppercase">Calendario de disponibilidad</h2>
           <p class="text-sm text-muted">Consulta las fechas disponibles para sesionar en el atelier de Valera, Estado Trujillo.</p>
         </div>
 
         <div class="flex flex-col gap-3">
-          <span class="text-[0.7rem] uppercase tracking-wider text-white">Artistas residentes</span>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <label class="cursor-pointer group">
-              <input class="sr-only" type="radio" name="selected_artist" value="Harry Duarte" data-label="Harry Duarte (Maestro fundador)" checked>
-              <div class="neu-option neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
-                <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
-                  <img src="assets/img/hero-harry.png" alt="Harry Duarte" class="w-full h-full object-cover rounded-lg">
-                </div>
-                <div class="min-w-0">
-                  <p class="font-display text-base text-white uppercase truncate">Harry Duarte</p>
-                  <p class="text-[10px] text-outline uppercase tracking-wider">Maestro fundador</p>
-                  <p class="text-xs text-muted mt-1">Blackwork, realismo y gran formato</p>
-                </div>
-              </div>
-            </label>
-            <label class="cursor-pointer group">
-              <input class="sr-only" type="radio" name="selected_artist" value="Valeria K." data-label="Valeria K. (Fine Line &amp; Botánica)">
-              <div class="neu-option neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
-                <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
-                  <img src="assets/img/artista-valeria.jpg" alt="Valeria K." class="w-full h-full object-cover rounded-lg">
-                </div>
-                <div class="min-w-0">
-                  <p class="font-display text-base text-white uppercase truncate">Valeria K.</p>
-                  <p class="text-[10px] text-outline uppercase tracking-wider">Fine Line &amp; Botánica</p>
-                  <p class="text-xs text-muted mt-1">Cupos próximos: este mes</p>
-                </div>
-              </div>
-            </label>
-            <label class="cursor-pointer group">
-              <input class="sr-only" type="radio" name="selected_artist" value="Mateo Thorne" data-label="Mateo Thorne (Brutalist Blackwork)">
-              <div class="neu-option neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
-                <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
-                  <img src="assets/img/artista-mateo.jpg" alt="Mateo Thorne" class="w-full h-full object-cover rounded-lg">
-                </div>
-                <div class="min-w-0">
-                  <p class="font-display text-base text-white uppercase truncate">Mateo Thorne</p>
-                  <p class="text-[10px] text-outline uppercase tracking-wider">Brutalist Blackwork</p>
-                  <p class="text-xs text-muted mt-1">Cupos próximos: siguiente mes</p>
-                </div>
-              </div>
-            </label>
+          <span class="text-[0.7rem] uppercase tracking-wider text-white">El artista</span>
+          <div class="neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
+            <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
+              <img src="assets/img/hero-harry.png" alt="Harry Duarte" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="min-w-0">
+              <p class="font-display text-base text-white uppercase">Harry Duarte</p>
+              <p class="text-[10px] text-outline uppercase tracking-wider">Único artista del atelier • Valera</p>
+              <p class="text-xs text-muted mt-1">Toda sesión la realiza él personalmente: sin suplentes, sin delegación y sin obras repetidas.</p>
+            </div>
           </div>
         </div>
 
@@ -556,7 +525,7 @@
                 </div>
                 <div class="flex justify-between gap-4">
                   <span class="text-outline uppercase text-[10px]">Artista:</span>
-                  <span class="text-white font-medium text-right" id="summaryArtist">Harry Duarte (Maestro fundador)</span>
+                  <span class="text-white font-medium text-right" id="summaryArtist">Harry Duarte</span>
                 </div>
                 <div class="flex justify-between gap-4">
                   <span class="text-outline uppercase text-[10px]">Fecha:</span>
