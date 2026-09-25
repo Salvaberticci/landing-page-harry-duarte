@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de Cuidados — Harry Duarte Tattoo Atelier</title>
+<meta name="description" content="Cómo cuidar un tatuaje: preparación previa, primeras 24 horas, cicatrización de 14 días, protección solar, señales de alarma y preguntas frecuentes.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ink text-bone font-sans antialiased min-h-screen">
+
+<header id="siteHeader" class="fixed top-0 w-full z-50 px-4 md:px-8 py-3">
+  <div class="max-w-shell mx-auto rounded-3xl neu-flat px-5 md:px-8 py-3 flex items-center justify-between gap-4 backdrop-blur-md bg-ink/95 border border-white/[0.04]">
+    <a href="index.html" class="flex items-center gap-3 group shrink-0">
+      <span class="w-10 h-10 rounded-2xl neu-card flex items-center justify-center p-1.5 overflow-hidden transition-transform group-hover:scale-105">
+        <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+      </span>
+      <span class="hidden sm:flex flex-col leading-none">
+        <span class="font-display text-sm md:text-base tracking-[0.2em] font-medium uppercase text-white group-hover:text-accent transition-colors">Harry Duarte</span>
+        <span class="text-[9px] tracking-[0.25em] uppercase text-outline mt-1">Tattoo Atelier</span>
+      </span>
+    </a>
+    <nav class="hidden xl:flex items-center gap-1 neu-inset px-3 py-1.5 rounded-full">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+      <a class="nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+      <a class="nav-link is-active" href="cuidados.html">Cuidados</a>
+    </nav>
+    <div class="flex items-center gap-3 shrink-0">
+      <a href="agendar.html" class="neu-button-primary rounded-full px-4 md:px-5 py-2.5 text-[0.68rem] uppercase tracking-widest flex items-center gap-1.5 hover:text-accent">
+        <span class="hidden sm:inline">Agendar Cita</span><span class="sm:hidden">Agendar</span>
+        <span class="material-symbols-outlined text-base" aria-hidden="true">calendar_month</span>
+      </a>
+      <button id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" class="xl:hidden neu-button rounded-full w-10 h-10 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-xl" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="fixed inset-0 z-40 hidden">
+  <div data-menu-backdrop class="absolute inset-0 bg-black/65 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+  <nav id="mobilePanel" class="absolute top-0 right-0 h-full w-72 max-w-[86%] bg-deep border-l border-white/5 px-5 py-6 flex flex-col gap-2 translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto">
+    <div class="flex items-center justify-between mb-3 pb-4 border-b border-white/[0.05]">
+      <span class="text-[10px] uppercase tracking-[0.25em] text-outline">Navegación</span>
+      <button type="button" data-menu-close aria-label="Cerrar menú" class="neu-button rounded-full w-9 h-9 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-lg" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <a class="mobile-nav-link" href="index.html">Inicio</a>
+    <a class="mobile-nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+    <a class="mobile-nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+    <a class="mobile-nav-link is-active" href="cuidados.html">Cuidados</a>
+    <a class="mobile-nav-link mt-4 neu-button-primary justify-center text-white hover:text-accent" href="agendar.html">Agendar Cita</a>
+    <a class="mobile-nav-link mt-auto justify-center" href="https://wa.me/584120537930" target="_blank" rel="noopener">WhatsApp +58 412 053 7930</a>
+  </nav>
+</div>
+
+<main class="w-full pt-24 md:pt-28 pb-4">
+  <div class="max-w-shell mx-auto px-4 md:px-8 flex flex-col gap-16">
+
+    <!-- Encabezado -->
+    <section class="neu-card p-6 md:p-10 rounded-3xl flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+      <div class="max-w-3xl">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="inline-block w-2 h-2 rounded-full bg-accent badge-dot"></span>
+          <span class="text-[10px] uppercase tracking-widest text-outline">Post-Cuidado • Protocolo del Atelier</span>
+        </div>
+        <h1 class="font-display text-4xl md:text-5xl text-white uppercase tracking-tight leading-none">Guía de Cuidados</h1>
+        <p class="text-muted mt-5 font-light leading-relaxed">
+          Un tatuaje es una herida controlada. Su calidad final depende tanto de la mano que lo hizo como de los
+          14 días que siguen a la sesión. Sigue esta guía y tu pieza conservará negro y detalle tal como salió del atelier.
+        </p>
+      </div>
+      <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button rounded-full px-6 py-3 text-[0.68rem] uppercase tracking-widest text-accent hover:text-white inline-flex items-center gap-2 self-start shrink-0">
+        <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+        Dudas por WhatsApp
+      </a>
+    </section>
+
+    <!-- Fases -->
+    <section class="w-full">
+      <div class="mb-8 px-2">
+        <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-2">
+          Cronograma
+        </div>
+        <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">La Cicatrización, Fase por Fase</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <article class="neu-card rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-10 h-10 rounded-2xl neu-inset grid place-items-center text-accent">
+              <span class="material-symbols-outlined" aria-hidden="true">event_available</span>
+            </div>
+            <span class="neu-inset px-3 py-1 rounded-full text-[10px] uppercase tracking-widest text-outline">72 h antes</span>
+          </div>
+          <h3 class="font-display text-xl text-white uppercase">Preparación previa</h3>
+          <ul class="mt-3 space-y-2 text-xs text-muted leading-relaxed">
+            <li>• No ingieras alcohol ni anticoagulantes 24 horas antes.</li>
+            <li>• Duerme bien y llega bien alimentado: la glucosa baja el umbral del dolor.</li>
+            <li>• Hidrata la zona con crema neutra durante los 3 días previos, sin exceso.</li>
+            <li>• No vayas a la sesión con la piel quemada por el sol ni con irritación activa.</li>
+          </ul>
+        </article>
+
+        <article class="neu-card rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-10 h-10 rounded-2xl neu-inset grid place-items-center text-accent">
+              <span class="material-symbols-outlined" aria-hidden="true">heal</span>
+            </div>
+            <span class="neu-inset px-3 py-1 rounded-full text-[10px] uppercase tracking-widest text-outline">Día 0 — 1</span>
+          </div>
+          <h3 class="font-display text-xl text-white uppercase">Primeras 24 horas</h3>
+          <ul class="mt-3 space-y-2 text-xs text-muted leading-relaxed">
+            <li>• Mantén la venda o film protector el tiempo indicado por el artista (2–6 h).</li>
+            <li>• Lávate las manos antes de tocar la zona; lava con jabón neutro y agua tibia.</li>
+            <li>• Seca con toques de papel desechable, nunca con toalla ni frotando.</li>
+            <li>• Aplica una capita fina de la pomada indicada, 2 a 3 veces al día.</li>
+            <li>• No sumergas la pieza: nada de baños, albercas, mar ni sudor intenso.</li>
+          </ul>
+        </article>
+
+        <article class="neu-card rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-10 h-10 rounded-2xl neu-inset grid place-items-center text-accent">
+              <span class="material-symbols-outlined" aria-hidden="true">autorenew</span>
+            </div>
+            <span class="neu-inset px-3 py-1 rounded-full text-[10px] uppercase tracking-widest text-outline">Días 2 — 14</span>
+          </div>
+          <h3 class="font-display text-xl text-white uppercase">Descamación</h3>
+          <ul class="mt-3 space-y-2 text-xs text-muted leading-relaxed">
+            <li>• La piel tirará y se descamará: es normal. No arranques ni desprendas costras.</li>
+            <li>• Reduce la pomada cuando empiece a descamar y pasa a crema hidratante neutra.</li>
+            <li>• Duerme con ropa holgada y sábanas limpias para evitar fricción.</li>
+            <li>• Sigue sin gimnasio de alta intensidad, sauna, piscina ni playa.</li>
+            <li>• Si la zona se abre o llora líquido, vuelve a cubrirla y consulta por WhatsApp.</li>
+          </ul>
+        </article>
+
+        <article class="neu-card rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div class="w-10 h-10 rounded-2xl neu-inset grid place-items-center text-accent">
+              <span class="material-symbols-outlined" aria-hidden="true">wb_sunny</span>
+            </div>
+            <span class="neu-inset px-3 py-1 rounded-full text-[10px] uppercase tracking-widest text-outline">Día 15 en adelante</span>
+          </div>
+          <h3 class="font-display text-xl text-white uppercase">Protección y mantenimiento</h3>
+          <ul class="mt-3 space-y-2 text-xs text-muted leading-relaxed">
+            <li>• Protector solar FPS 50+ desde el día 15 y de forma permanente al sol.</li>
+            <li>• El sol es el enemigo número uno del detalle fino y de la escala de grises.</li>
+            <li>• Hidrata la piel al menos una vez al día para mantener la saturación.</li>
+            <li>• Recuerda la sesión de retoque si el artista la indicó (30–60 días).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Señales de alarma -->
+    <section class="neu-card rounded-3xl p-6 md:p-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-3 self-start w-fit">
+            Atención
+          </div>
+          <h2 class="font-display text-2xl md:text-3xl text-white uppercase tracking-tight">Señales que sí requieren contacto</h2>
+          <p class="text-sm text-muted mt-4 leading-relaxed">Un poco de enrojecimiento y comezón durante los primeros días es esperable. Esto otro no lo es:</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+            <div class="neu-inset rounded-2xl p-4 text-xs text-muted leading-relaxed">• Fiebre o escalofríos después de la sesión.</div>
+            <div class="neu-inset rounded-2xl p-4 text-xs text-muted leading-relaxed">• Dolor intenso que aumenta después del tercer día.</div>
+            <div class="neu-inset rounded-2xl p-4 text-xs text-muted leading-relaxed">• Pus espeso, mal olor o hinchazón progresiva.</div>
+            <div class="neu-inset rounded-2xl p-4 text-xs text-muted leading-relaxed">• Ronchas, ampollas o irritación que se extiende.</div>
+          </div>
+        </div>
+        <div class="lg:col-span-5 flex flex-col gap-4">
+          <div class="neu-inset rounded-2xl p-5">
+            <p class="text-[10px] uppercase tracking-widest text-accent">Primer contacto</p>
+            <p class="text-sm text-bone mt-2 leading-relaxed">Escríbenos por WhatsApp con una foto de la zona. Respondemos durante el horario del atelier: martes a sábado de 11:00 a 20:00.</p>
+          </div>
+          <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button-primary rounded-2xl px-6 py-4 text-[0.7rem] uppercase tracking-widest flex items-center justify-center gap-2 hover:text-accent">
+            <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+            Escribir al Atelier
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="w-full">
+      <div class="mb-8 px-2">
+        <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-2">
+          Preguntas frecuentes
+        </div>
+        <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">Antes de tu Sesión</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <details class="acc neu-card rounded-3xl">
+          <summary class="font-display text-base md:text-lg text-white uppercase">¿Cuánto duele?</summary>
+          <div class="acc-body">Depende de la zona y de tu umbral. Costillas, esternón y tobillo son los más exigentes; brazo y pierna se toleran bien. Trabajamos con pausas programadas y nunca forzamos una sesión larga si el cuerpo pide alto.</div>
+        </details>
+        <details class="acc neu-card rounded-3xl">
+          <summary class="font-display text-base md:text-lg text-white uppercase">¿Cómo se calcula el precio?</summary>
+          <div class="acc-body">Por tamaño, complejidad, zona y tiempo estimado de máquina. En la consulta te damos un rango cerrado por escrito; nunca se cobra por hora improvisada. La seña de reserva se descuenta del total.</div>
+        </details>
+        <details class="acc neu-card rounded-3xl">
+          <summary class="font-display text-base md:text-lg text-white uppercase">¿Cuánto tarda una pieza?</summary>
+          <div class="acc-body">Pieza pequeña: 2 a 3 horas. Mediana: 4 a 6 horas, usualmente en una o dos sesiones. Gran formato (manga, torso, espalda): varias sesiones de 4 a 6 horas separadas por al menos 3 semanas de cicatrización.</div>
+        </details>
+        <details class="acc neu-card rounded-3xl">
+          <summary class="font-display text-base md:text-lg text-white uppercase">¿Puedo beber alcohol?</summary>
+          <div class="acc-body">No 24 horas antes ni después de la sesión. El alcohol diluye la sangre, aumenta el sangrado y la irritación, y afecta la retención del pigmento. Lo mismo aplica para analgésicos y suplementos anticoagulantes.</div>
+        </details>
+        <details class="acc neu-card rounded-3xl">
+          <summary class="font-display text-base md:text-lg text-white uppercase">¿Aceptan menores de edad?</summary>
+          <div class="acc-body">No. La edad mínima para tatuarse en el atelier es de 18 años sin excepción, con documento de identidad original el día de la cita.</div>
+        </details>
+        <details class="acc neu-card rounded-3xl">
+          <summary class="font-display text-base md:text-lg text-white uppercase">¿Retocan tatuajes de otros estudios?</summary>
+          <div class="acc-body">Sí, evaluamos cada caso. Trabajamos coberturas, cover-ups y retoques de piezas antiguas siempre que la piel lo permita. Envíanos una foto por WhatsApp para una primera valoración.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Protocolo -->
+    <section class="w-full">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="neu-card rounded-3xl p-6">
+          <div class="w-10 h-10 rounded-2xl neu-inset grid place-items-center text-accent mb-4">
+            <span class="material-symbols-outlined" aria-hidden="true">sanitizer</span>
+          </div>
+          <h3 class="font-display text-lg text-white uppercase">Material de un solo uso</h3>
+          <p class="text-xs text-muted mt-2 leading-relaxed">Agujas, guantes, cuchillas y protectores se abren frente a ti y se descartan al terminar. Autoclave de clase B para todo lo reutilizable.</p>
+        </div>
+        <div class="neu-card rounded-3xl p-6">
+          <div class="w-10 h-10 rounded-2xl neu-inset grid place-items-center text-accent mb-4">
+            <span class="material-symbols-outlined" aria-hidden="true">pets</span>
+          </div>
+          <h3 class="font-display text-lg text-white uppercase">Pigmentos veganos</h3>
+          <p class="text-xs text-muted mt-2 leading-relaxed">Pigmentos de grado cosmético sin derivados animales ni metales pesados, probados para retención estable y bajo riesgo de reacción.</p>
+        </div>
+        <div class="neu-card rounded-3xl p-6">
+          <div class="w-10 h-10 rounded-2xl neu-inset grid place-items-center text-accent mb-4">
+            <span class="material-symbols-outlined" aria-hidden="true">local_pharmacy</span>
+          </div>
+          <h3 class="font-display text-lg text-white uppercase">Kit de curación</h3>
+          <p class="text-xs text-muted mt-2 leading-relaxed">Sales, jabón neutro, pomada y apósitos estériles para los 14 días, incluidos en tu sesión y acompañados de seguimiento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="neu-card rounded-3xl p-8 md:p-12 text-center">
+      <div class="max-w-2xl mx-auto flex flex-col items-center gap-5">
+        <div class="neu-inset px-4 py-1.5 rounded-full text-accent text-[10px] uppercase tracking-widest">Agenda selectiva • Cupo limitado</div>
+        <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">Listo para tu próxima pieza</h2>
+        <p class="text-sm text-muted leading-relaxed">Cuéntanos el concepto, la zona y el tamaño aproximado. Recibirás respuesta por WhatsApp con disponibilidad y presupuesto.</p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+          <a href="agendar.html" class="w-full sm:w-auto px-7 py-3.5 neu-button-primary rounded-2xl text-[0.7rem] uppercase tracking-widest flex items-center justify-center gap-2 hover:text-accent">
+            Solicitar Cita
+            <span class="material-symbols-outlined text-base" aria-hidden="true">edit_note</span>
+          </a>
+          <a href="portafolio.html" class="w-full sm:w-auto px-7 py-3.5 neu-button rounded-2xl text-muted hover:text-white text-[0.7rem] uppercase tracking-widest flex items-center justify-center gap-2">
+            Ver Portafolio
+            <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="w-full bg-[#18191e] border-t border-white/[0.03] pt-14 pb-10 mt-16">
+  <div class="max-w-shell mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-white/[0.04]">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 rounded-xl neu-card flex items-center justify-center overflow-hidden p-1.5">
+            <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+          </span>
+          <p class="font-display text-lg uppercase tracking-wider text-white">Harry Duarte</p>
+        </div>
+        <p class="text-xs text-outline max-w-xs leading-relaxed">Estudio privado del artista Harry Duarte. Bespoke haute-couture fine line y blackwork contemporáneo bajo rigurosa precisión estética.</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Atelier &amp; Ubicación</p>
+        <p class="text-xs text-muted">Valera, Estado Trujillo</p>
+        <p class="text-xs text-muted mt-1">Venezuela</p>
+        <p class="text-xs text-accent mt-3">Acceso exclusivo con cita previa</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Horario</p>
+        <p class="text-xs text-muted">Martes — Sábado: 11:00 — 20:00</p>
+        <p class="text-xs text-muted mt-1">Domingo &amp; Lunes: Cerrado / Convención</p>
+        <a href="agendar.html" class="inline-block text-xs text-accent hover:text-white transition-colors mt-3">Agendar una cita →</a>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Contacto Directo</p>
+        <p class="text-xs text-muted mb-4">Escríbenos por WhatsApp para consultar disponibilidad, presupuestos y reservas de flash.</p>
+        <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.65rem] uppercase tracking-widest text-accent hover:text-white">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+          +58 412 053 7930
+        </a>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <p class="text-[11px] uppercase tracking-widest text-outline">© <span class="js-year"></span> Harry Duarte. Todos los derechos reservados.</p>
+      <p class="text-[11px] uppercase tracking-widest text-outline">Blackwork &amp; Fine Line Luxury</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast neu-card px-5 py-3.5 rounded-2xl text-sm text-bone"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

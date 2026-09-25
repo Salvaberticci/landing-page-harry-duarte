@@ -1,0 +1,11 @@
+node_modules/
+.vercel/
+*.log
+.DS_Store
+Thumbs.db
+
+# Borradores de diseño (fuentes originales, no desplegadas)
+agendar_cita_consulta_de_tatuaje_neumorfismo/
+inicio_tatuajes_de_autor_neumorfismo/
+portafolio_flash_art_neumorfismo/
+atelier_duarte/

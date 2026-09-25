@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portafolio &amp; Flash — Harry Duarte Tattoo Atelier</title>
+<meta name="description" content="Archivo de obra permanente y flash disponible de Harry Duarte: blackwork, dark realismo, ornamental y piezas 1/1 en Valera, Estado Trujillo.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ink text-bone font-sans antialiased min-h-screen">
+
+<header id="siteHeader" class="fixed top-0 w-full z-50 px-4 md:px-8 py-3">
+  <div class="max-w-shell mx-auto rounded-3xl neu-flat px-5 md:px-8 py-3 flex items-center justify-between gap-4 backdrop-blur-md bg-ink/95 border border-white/[0.04]">
+    <a href="index.html" class="flex items-center gap-3 group shrink-0">
+      <span class="w-10 h-10 rounded-2xl neu-card flex items-center justify-center p-1.5 overflow-hidden transition-transform group-hover:scale-105">
+        <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+      </span>
+      <span class="hidden sm:flex flex-col leading-none">
+        <span class="font-display text-sm md:text-base tracking-[0.2em] font-medium uppercase text-white group-hover:text-accent transition-colors">Harry Duarte</span>
+        <span class="text-[9px] tracking-[0.25em] uppercase text-outline mt-1">Tattoo Atelier</span>
+      </span>
+    </a>
+    <nav class="hidden xl:flex items-center gap-1 neu-inset px-3 py-1.5 rounded-full">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link is-active" href="portafolio.html">Portafolio &amp; Flash</a>
+      <a class="nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+      <a class="nav-link" href="cuidados.html">Cuidados</a>
+    </nav>
+    <div class="flex items-center gap-3 shrink-0">
+      <a href="agendar.html" class="neu-button-primary rounded-full px-4 md:px-5 py-2.5 text-[0.68rem] uppercase tracking-widest flex items-center gap-1.5 hover:text-accent">
+        <span class="hidden sm:inline">Agendar Cita</span><span class="sm:hidden">Agendar</span>
+        <span class="material-symbols-outlined text-base" aria-hidden="true">calendar_month</span>
+      </a>
+      <button id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" class="xl:hidden neu-button rounded-full w-10 h-10 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-xl" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="fixed inset-0 z-40 hidden">
+  <div data-menu-backdrop class="absolute inset-0 bg-black/65 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+  <nav id="mobilePanel" class="absolute top-0 right-0 h-full w-72 max-w-[86%] bg-deep border-l border-white/5 px-5 py-6 flex flex-col gap-2 translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto">
+    <div class="flex items-center justify-between mb-3 pb-4 border-b border-white/[0.05]">
+      <span class="text-[10px] uppercase tracking-[0.25em] text-outline">Navegación</span>
+      <button type="button" data-menu-close aria-label="Cerrar menú" class="neu-button rounded-full w-9 h-9 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-lg" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <a class="mobile-nav-link" href="index.html">Inicio</a>
+    <a class="mobile-nav-link is-active" href="portafolio.html">Portafolio &amp; Flash</a>
+    <a class="mobile-nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+    <a class="mobile-nav-link" href="cuidados.html">Cuidados</a>
+    <a class="mobile-nav-link mt-4 neu-button-primary justify-center text-white hover:text-accent" href="agendar.html">Agendar Cita</a>
+    <a class="mobile-nav-link mt-auto justify-center" href="https://wa.me/584120537930" target="_blank" rel="noopener">WhatsApp +58 412 053 7930</a>
+  </nav>
+</div>
+
+<main class="w-full pt-24 md:pt-28 pb-4">
+  <div class="max-w-shell mx-auto px-4 md:px-8 flex flex-col gap-12">
+
+    <!-- Encabezado editorial -->
+    <section class="neu-card p-6 lg:p-10 rounded-3xl flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+      <div class="max-w-3xl">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="inline-block w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.6)]"></span>
+          <span class="text-[10px] uppercase tracking-widest text-outline">Index • Serie Opus Noir — Harry Duarte</span>
+        </div>
+        <h1 class="font-display text-4xl lg:text-5xl text-white tracking-tight uppercase leading-none">Archivo &amp; Piezas Flash</h1>
+        <p class="text-muted mt-5 max-w-2xl font-light leading-relaxed">
+          Obra permanente en tinta carbón mineral. Micro-ilustraciones arquitectónicas, sombreado litográfico y estudios anatómicos ejecutados con aguja simple, respaldados por más de 23 años de maestría de Harry Duarte.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full lg:w-auto">
+        <div class="neu-inset p-4 rounded-2xl text-center min-w-[96px]">
+          <p class="font-display text-2xl text-white font-light">04</p>
+          <p class="text-[10px] uppercase tracking-widest text-outline mt-1">Flash Vivos</p>
+        </div>
+        <div class="neu-inset p-4 rounded-2xl text-center min-w-[96px]">
+          <p class="font-display text-2xl text-white font-light">87</p>
+          <p class="text-[10px] uppercase tracking-widest text-outline mt-1">En Piel</p>
+        </div>
+        <div class="neu-inset p-4 rounded-2xl text-center min-w-[96px]">
+          <p class="font-display text-2xl text-accent font-light">1/1</p>
+          <p class="text-[10px] uppercase tracking-widest text-outline mt-1">Edición Singular</p>
+        </div>
+        <div class="neu-inset p-4 rounded-2xl text-center min-w-[96px]">
+          <p class="font-display text-2xl text-white font-light">+23</p>
+          <p class="text-[10px] uppercase tracking-widest text-outline mt-1">Años Trayectoria</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="w-full">
+      <div class="neu-inset p-2.5 rounded-2xl flex items-center justify-between flex-wrap gap-3">
+        <div class="flex items-center flex-wrap gap-2" role="tablist" aria-label="Filtrar piezas">
+          <button type="button" class="filter-btn neu-pressed text-white px-4 py-2.5 rounded-xl text-[0.65rem] uppercase tracking-widest" data-filter="all" aria-pressed="true">Todos (6)</button>
+          <button type="button" class="filter-btn neu-button text-muted px-4 py-2.5 rounded-xl text-[0.65rem] uppercase tracking-widest" data-filter="blackwork" aria-pressed="false">Blackwork</button>
+          <button type="button" class="filter-btn neu-button text-muted px-4 py-2.5 rounded-xl text-[0.65rem] uppercase tracking-widest" data-filter="dark-realism" aria-pressed="false">Dark Realism</button>
+          <button type="button" class="filter-btn neu-button text-muted px-4 py-2.5 rounded-xl text-[0.65rem] uppercase tracking-widest" data-filter="ornamental" aria-pressed="false">Ornamental</button>
+          <button type="button" class="filter-btn neu-button text-muted px-4 py-2.5 rounded-xl text-[0.65rem] uppercase tracking-widest flex items-center gap-2" data-filter="flash" aria-pressed="false">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent badge-dot"></span>
+            Flash Disponibles
+          </button>
+        </div>
+        <p id="galleryCount" class="hidden sm:block px-3 py-1.5 rounded-xl text-[0.65rem] uppercase tracking-wider text-outline">Mostrando 6 de 6 piezas</p>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- 1 -->
+        <article class="gallery-card group relative neu-card rounded-3xl flex flex-col overflow-hidden p-3 transition-transform duration-300 hover:-translate-y-1" data-category="flash blackwork">
+          <div class="relative w-full aspect-[4/5] overflow-hidden rounded-2xl bg-sunken neu-inset" role="button" tabindex="0"
+               data-lightbox data-src="assets/img/flash-daga.jpg" data-title="Sacred Dagger &amp; Serpent" data-meta="Blackwork • 18 × 8 cm • Flash 1/1"
+               aria-label="Ampliar Sacred Dagger &amp; Serpent">
+            <img src="assets/img/flash-daga.jpg" alt="Flash de daga gótica con serpiente enrollada, tinta negra sobre papel" class="w-full h-full object-cover contrast-125 transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16171b]/95 via-[#16171b]/25 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+              <span class="neu-button text-white text-[10px] uppercase px-3 py-1 rounded-lg tracking-widest font-semibold">Flash Disponible</span>
+              <span class="text-[10px] uppercase text-muted px-3 py-1 rounded-lg tracking-widest bg-[#16181b]/85 backdrop-blur-md border border-white/5">Pieza única • 01/01</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <p class="text-[11px] uppercase text-outline tracking-widest">Estilo: Blackwork Sacro</p>
+              <h2 class="font-display text-xl text-white uppercase tracking-tight mt-1 font-light">Sacred Dagger &amp; Serpent</h2>
+              <div class="flex items-center justify-between text-muted text-xs mt-1.5">
+                <span>Sugerencia: Antebrazo / Manga</span>
+                <span class="neu-inset px-2 py-0.5 rounded text-[11px] text-bone">18 × 8 cm</span>
+              </div>
+            </div>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 neu-button rounded-full w-11 h-11 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">zoom_in</span>
+            </span>
+          </div>
+          <div class="p-4 mt-2 neu-inset rounded-2xl flex items-center justify-between gap-3">
+            <div>
+              <p class="text-[10px] uppercase text-outline">Reserva anticipada</p>
+              <p class="text-sm text-white font-medium tracking-wide">$5,200 MXN</p>
+            </div>
+            <a href="agendar.html?tipo=flash&amp;pieza=Sacred%20Dagger%20%26%20Serpient&amp;precio=5200" class="neu-button text-white text-[0.65rem] uppercase tracking-widest px-4 py-2.5 rounded-xl hover:text-accent shrink-0">Apartar</a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="gallery-card group relative neu-card rounded-3xl flex flex-col overflow-hidden p-3 transition-transform duration-300 hover:-translate-y-1" data-category="dark-realism">
+          <div class="relative w-full aspect-[4/5] overflow-hidden rounded-2xl bg-sunken neu-inset" role="button" tabindex="0"
+               data-lightbox data-src="assets/img/pieza-corona.jpg" data-title="Corona de Espinas" data-meta="Dark Realism Litúrgico • Antebrazo anterior • 14 horas"
+               aria-label="Ampliar Corona de Espinas">
+            <img src="assets/img/pieza-corona.jpg" alt="Busto clásico fracturado en esquirlas de obsidiana, realismo en blanco y negro" class="w-full h-full object-cover contrast-125 transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16171b]/95 via-[#16171b]/25 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+              <span class="neu-inset text-muted text-[10px] uppercase px-3 py-1 rounded-lg tracking-widest border border-black/40">Colección Privada</span>
+              <span class="text-[10px] uppercase text-outline px-3 py-1 rounded-lg tracking-widest bg-[#16181b]/85 backdrop-blur-md border border-white/5">Valera 2024</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <p class="text-[11px] uppercase text-outline tracking-widest">Estilo: Dark Realism Litúrgico</p>
+              <h2 class="font-display text-xl text-white uppercase tracking-tight mt-1 font-light">Corona de Espinas</h2>
+              <div class="flex items-center justify-between text-muted text-xs mt-1.5">
+                <span>Ubicación: Antebrazo anterior</span>
+                <span class="neu-inset px-2 py-0.5 rounded text-[11px] text-bone">Comisión de autor</span>
+              </div>
+            </div>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 neu-button rounded-full w-11 h-11 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">zoom_in</span>
+            </span>
+          </div>
+          <div class="p-4 mt-2 neu-inset rounded-2xl flex items-center justify-between gap-3">
+            <span class="text-[11px] uppercase text-outline">Cliente privado • 14 horas</span>
+            <span class="neu-button px-3 py-1.5 rounded-lg text-[0.62rem] uppercase text-muted flex items-center gap-1.5 border border-white/5">
+              Archivado <span class="material-symbols-outlined text-xs" aria-hidden="true">verified</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="gallery-card group relative neu-card rounded-3xl flex flex-col overflow-hidden p-3 transition-transform duration-300 hover:-translate-y-1" data-category="flash ornamental">
+          <div class="relative w-full aspect-[4/5] overflow-hidden rounded-2xl bg-sunken neu-inset" role="button" tabindex="0"
+               data-lightbox data-src="assets/img/flash-oculo.jpg" data-title="Ocular Arcana &amp; Keystone" data-meta="Geometric Brutalism • 15 × 12 cm • Flash 1/1"
+               aria-label="Ampliar Ocular Arcana y Keystone">
+            <img src="assets/img/flash-oculo.jpg" alt="Símbolo geométrico con ojo central en arco brutalista, línea fina negra" class="w-full h-full object-cover contrast-125 transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16171b]/95 via-[#16171b]/25 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+              <span class="neu-button text-white text-[10px] uppercase px-3 py-1 rounded-lg tracking-widest font-semibold">Flash Disponible</span>
+              <span class="text-[10px] uppercase text-muted px-3 py-1 rounded-lg tracking-widest bg-[#16181b]/85 backdrop-blur-md border border-white/5">Pieza única • 01/01</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <p class="text-[11px] uppercase text-outline tracking-widest">Estilo: Ornamental Geométrico</p>
+              <h2 class="font-display text-xl text-white uppercase tracking-tight mt-1 font-light">Ocular Arcana</h2>
+              <div class="flex items-center justify-between text-muted text-xs mt-1.5">
+                <span>Sugerencia: Hombro / Brazo</span>
+                <span class="neu-inset px-2 py-0.5 rounded text-[11px] text-bone">15 × 12 cm</span>
+              </div>
+            </div>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 neu-button rounded-full w-11 h-11 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">zoom_in</span>
+            </span>
+          </div>
+          <div class="p-4 mt-2 neu-inset rounded-2xl flex items-center justify-between gap-3">
+            <div>
+              <p class="text-[10px] uppercase text-outline">Reserva anticipada</p>
+              <p class="text-sm text-white font-medium tracking-wide">$4,800 MXN</p>
+            </div>
+            <a href="agendar.html?tipo=flash&amp;pieza=Ocular%20Arcana%20%26%20Keystone&amp;precio=4800" class="neu-button text-white text-[0.65rem] uppercase tracking-widest px-4 py-2.5 rounded-xl hover:text-accent shrink-0">Apartar</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="gallery-card group relative neu-card rounded-3xl flex flex-col overflow-hidden p-3 transition-transform duration-300 hover:-translate-y-1" data-category="blackwork">
+          <div class="relative w-full aspect-[4/5] overflow-hidden rounded-2xl bg-sunken neu-inset" role="button" tabindex="0"
+               data-lightbox data-src="assets/img/pieza-lettering.jpg" data-title="Lettering de Autor" data-meta="Chicano Lettering &amp; Desgarro • Antebrazo medio"
+               aria-label="Ampliar Lettering de Autor">
+            <img src="assets/img/pieza-lettering.jpg" alt="Lettering de autor con rosa espinada y guantelete metálico en el hombro" class="w-full h-full object-cover contrast-125 transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16171b]/95 via-[#16171b]/25 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+              <span class="neu-inset text-muted text-[10px] uppercase px-3 py-1 rounded-lg tracking-widest border border-black/40">Colección Privada</span>
+              <span class="text-[10px] uppercase text-outline px-3 py-1 rounded-lg tracking-widest bg-[#16181b]/85 backdrop-blur-md border border-white/5">Septiembre 2024</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <p class="text-[11px] uppercase text-outline tracking-widest">Estilo: Lettering &amp; Desgarro</p>
+              <h2 class="font-display text-xl text-white uppercase tracking-tight mt-1 font-light">Lettering de Autor</h2>
+              <div class="flex items-center justify-between text-muted text-xs mt-1.5">
+                <span>Ubicación: Antebrazo medio</span>
+                <span class="neu-inset px-2 py-0.5 rounded text-[11px] text-bone">Personalizada</span>
+              </div>
+            </div>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 neu-button rounded-full w-11 h-11 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">zoom_in</span>
+            </span>
+          </div>
+          <div class="p-4 mt-2 neu-inset rounded-2xl flex items-center justify-between gap-3">
+            <span class="text-[11px] uppercase text-outline">Archivado • Obra única</span>
+            <span class="neu-button px-3 py-1.5 rounded-lg text-[0.62rem] uppercase text-muted flex items-center gap-1.5 border border-white/5">
+              Ver Proceso <span class="material-symbols-outlined text-xs" aria-hidden="true">arrow_forward</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="gallery-card group relative neu-card rounded-3xl flex flex-col overflow-hidden p-3 transition-transform duration-300 hover:-translate-y-1" data-category="flash dark-realism">
+          <div class="relative w-full aspect-[4/5] overflow-hidden rounded-2xl bg-sunken neu-inset" role="button" tabindex="0"
+               data-lightbox data-src="assets/img/flash-cuervo.jpg" data-title="Matrioskas Anatómicas" data-meta="Dark Realism • 13 × 7 cm • Flash 1/1"
+               aria-label="Ampliar Matrioskas Anatómicas">
+            <img src="assets/img/flash-cuervo.jpg" alt="Cráneo de cuervo sobre columna catedralicia fracturada, sombreado por micropuntillismo" class="w-full h-full object-cover contrast-125 transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16171b]/95 via-[#16171b]/25 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+              <span class="neu-button text-white text-[10px] uppercase px-3 py-1 rounded-lg tracking-widest font-semibold">Flash Disponible</span>
+              <span class="text-[10px] uppercase text-muted px-3 py-1 rounded-lg tracking-widest bg-[#16181b]/85 backdrop-blur-md border border-white/5">Pieza única • 01/01</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <p class="text-[11px] uppercase text-outline tracking-widest">Estilo: Dark Realism Neotradicional</p>
+              <h2 class="font-display text-xl text-white uppercase tracking-tight mt-1 font-light">Matrioskas Anatómicas</h2>
+              <div class="flex items-center justify-between text-muted text-xs mt-1.5">
+                <span>Sugerencia: Tríceps / Costado</span>
+                <span class="neu-inset px-2 py-0.5 rounded text-[11px] text-bone">13 × 7 cm</span>
+              </div>
+            </div>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 neu-button rounded-full w-11 h-11 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">zoom_in</span>
+            </span>
+          </div>
+          <div class="p-4 mt-2 neu-inset rounded-2xl flex items-center justify-between gap-3">
+            <div>
+              <p class="text-[10px] uppercase text-outline">Reserva anticipada</p>
+              <p class="text-sm text-white font-medium tracking-wide">$4,500 MXN</p>
+            </div>
+            <a href="agendar.html?tipo=flash&amp;pieza=Matrioskas%20Anat%C3%B3micas&amp;precio=4500" class="neu-button text-white text-[0.65rem] uppercase tracking-widest px-4 py-2.5 rounded-xl hover:text-accent shrink-0">Apartar</a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="gallery-card group relative neu-card rounded-3xl flex flex-col overflow-hidden p-3 transition-transform duration-300 hover:-translate-y-1" data-category="flash ornamental">
+          <div class="relative w-full aspect-[4/5] overflow-hidden rounded-2xl bg-sunken neu-inset" role="button" tabindex="0"
+               data-lightbox data-src="assets/img/flash-polilla.jpg" data-title="Devoción &amp; Manto Sagrado" data-meta="Ornamental Sacro • 18 × 10 cm • Flash 1/1"
+               aria-label="Ampliar Devoción y Manto Sagrado">
+            <img src="assets/img/flash-polilla.jpg" alt="Polilla gótica con fases lunares sobre la columna, dotwork de línea fina" class="w-full h-full object-cover contrast-125 transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16171b]/95 via-[#16171b]/25 to-transparent"></div>
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+              <span class="neu-button text-white text-[10px] uppercase px-3 py-1 rounded-lg tracking-widest font-semibold">Flash Disponible</span>
+              <span class="text-[10px] uppercase text-muted px-3 py-1 rounded-lg tracking-widest bg-[#16181b]/85 backdrop-blur-md border border-white/5">Pieza única • 01/01</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <p class="text-[11px] uppercase text-outline tracking-widest">Estilo: Ornamental Sacro</p>
+              <h2 class="font-display text-xl text-white uppercase tracking-tight mt-1 font-light">Devoción &amp; Manto</h2>
+              <div class="flex items-center justify-between text-muted text-xs mt-1.5">
+                <span>Sugerencia: Brazo completo</span>
+                <span class="neu-inset px-2 py-0.5 rounded text-[11px] text-bone">18 × 10 cm</span>
+              </div>
+            </div>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 neu-button rounded-full w-11 h-11 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">zoom_in</span>
+            </span>
+          </div>
+          <div class="p-4 mt-2 neu-inset rounded-2xl flex items-center justify-between gap-3">
+            <div>
+              <p class="text-[10px] uppercase text-outline">Reserva anticipada</p>
+              <p class="text-sm text-white font-medium tracking-wide">$3,900 MXN</p>
+            </div>
+            <a href="agendar.html?tipo=flash&amp;pieza=Devoci%C3%B3n%20%26%20Manto%20Sagrado&amp;precio=3900" class="neu-button text-white text-[0.65rem] uppercase tracking-widest px-4 py-2.5 rounded-xl hover:text-accent shrink-0">Apartar</a>
+          </div>
+        </article>
+
+      </div>
+      <p id="galleryEmpty" class="hidden neu-card rounded-3xl p-10 text-center text-muted text-sm">No hay piezas en esta categoría por ahora.</p>
+    </section>
+
+    <!-- Manifiesto de exclusividad -->
+    <section class="neu-card p-6 lg:p-10 rounded-3xl relative overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+        <div class="lg:col-span-7">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="material-symbols-outlined text-outline text-lg" aria-hidden="true">auto_awesome</span>
+            <span class="text-[10px] uppercase tracking-widest text-accent">Manifiesto de exclusividad</span>
+          </div>
+          <h2 class="font-display text-2xl md:text-3xl text-white uppercase tracking-tight leading-tight font-light">
+            "Todos los diseños flash son piezas irrepetibles y se tatúan una sola vez."
+          </h2>
+          <p class="text-sm text-muted mt-5 leading-relaxed">Nuestra convención prohíbe la replicación. Cada trazo concebido por Harry Duarte habita exclusivamente en la piel del coleccionista que lo adquiere. Al confirmar tu flash, el diseño se retira del catálogo permanente.</p>
+          <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4">
+            <a href="agendar.html?tipo=flash" class="inline-flex items-center justify-center gap-2 neu-button text-white text-[0.7rem] uppercase tracking-widest px-6 py-3 rounded-xl hover:text-accent">
+              Agendar Consulta con Harry Duarte
+              <span class="material-symbols-outlined text-base" aria-hidden="true">east</span>
+            </a>
+            <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 neu-inset text-muted text-[0.7rem] uppercase tracking-widest px-6 py-3 rounded-xl hover:text-white">
+              <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 flex flex-col gap-4">
+          <div class="p-4 neu-inset rounded-2xl">
+            <p class="text-[0.7rem] uppercase tracking-widest text-white flex items-center gap-2">
+              <span class="material-symbols-outlined text-base text-accent" aria-hidden="true">verified_user</span>
+              1. Depósito de reserva
+            </p>
+            <p class="text-xs text-muted mt-1.5 leading-relaxed">El anticipo congela el flash de forma inmediata y se descuenta del precio final.</p>
+          </div>
+          <div class="p-4 neu-inset rounded-2xl">
+            <p class="text-[0.7rem] uppercase tracking-widest text-white flex items-center gap-2">
+              <span class="material-symbols-outlined text-base text-accent" aria-hidden="true">straighten</span>
+              2. Adaptación anatómica
+            </p>
+            <p class="text-xs text-muted mt-1.5 leading-relaxed">Ajuste dimensional el día de la cita según tensión dérmica y curvas corporales.</p>
+          </div>
+          <div class="p-4 neu-inset rounded-2xl">
+            <p class="text-[0.7rem] uppercase tracking-widest text-white flex items-center gap-2">
+              <span class="material-symbols-outlined text-base text-accent" aria-hidden="true">sanitizer</span>
+              3. Protocolo clínico
+            </p>
+            <p class="text-xs text-muted mt-1.5 leading-relaxed">Pigmentos veganos, agujas de grado quirúrgico desechables y atmósfera privada en Valera.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de la pieza">
+  <button type="button" data-lightbox-close aria-label="Cerrar vista" class="absolute top-5 right-5 neu-button rounded-full w-11 h-11 grid place-items-center text-white z-10">
+    <span class="material-symbols-outlined text-xl" aria-hidden="true">close</span>
+  </button>
+  <figure class="max-w-4xl w-full flex flex-col items-center gap-4">
+          <img id="lightboxImage" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="max-h-[72vh] w-auto rounded-2xl neu-card p-2 object-contain">
+    <figcaption class="text-center">
+      <p id="lightboxTitle" class="font-display text-xl md:text-2xl text-white uppercase tracking-wide"></p>
+      <p id="lightboxMeta" class="text-xs text-muted uppercase tracking-widest mt-1"></p>
+    </figcaption>
+  </figure>
+</div>
+
+<footer class="w-full bg-[#18191e] border-t border-white/[0.03] pt-14 pb-10 mt-16">
+  <div class="max-w-shell mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-white/[0.04]">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 rounded-xl neu-card flex items-center justify-center overflow-hidden p-1.5">
+            <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+          </span>
+          <p class="font-display text-lg uppercase tracking-wider text-white">Harry Duarte</p>
+        </div>
+        <p class="text-xs text-outline max-w-xs leading-relaxed">Estudio privado del artista Harry Duarte. Bespoke haute-couture fine line y blackwork contemporáneo bajo rigurosa precisión estética.</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Atelier &amp; Ubicación</p>
+        <p class="text-xs text-muted">Valera, Estado Trujillo</p>
+        <p class="text-xs text-muted mt-1">Venezuela</p>
+        <p class="text-xs text-accent mt-3">Acceso exclusivo con cita previa</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Horario</p>
+        <p class="text-xs text-muted">Martes — Sábado: 11:00 — 20:00</p>
+        <p class="text-xs text-muted mt-1">Domingo &amp; Lunes: Cerrado / Convención</p>
+        <a href="agendar.html" class="inline-block text-xs text-accent hover:text-white transition-colors mt-3">Agendar una cita →</a>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Contacto Directo</p>
+        <p class="text-xs text-muted mb-4">Escríbenos por WhatsApp para consultar disponibilidad, presupuestos y reservas de flash.</p>
+        <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.65rem] uppercase tracking-widest text-accent hover:text-white">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+          +58 412 053 7930
+        </a>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <p class="text-[11px] uppercase tracking-widest text-outline">© <span class="js-year"></span> Harry Duarte. Todos los derechos reservados.</p>
+      <p class="text-[11px] uppercase tracking-widest text-outline">Blackwork &amp; Fine Line Luxury</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast neu-card px-5 py-3.5 rounded-2xl text-sm text-bone"></div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/portafolio.js"></script>
+</body>
+</html>

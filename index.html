@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harry Duarte — Tattoo Atelier | Tatuajes de autor en Valera</title>
+<meta name="description" content="Atelier privado de tatuaje de alta costura en Valera, Estado Trujillo. Más de 23 años de maestría en blackwork, realismo sombrío y fine line. Diseños personalizados y únicos.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ink text-bone font-sans antialiased min-h-screen">
+
+<header id="siteHeader" class="fixed top-0 w-full z-50 px-4 md:px-8 py-3">
+  <div class="max-w-shell mx-auto rounded-3xl neu-flat px-5 md:px-8 py-3 flex items-center justify-between gap-4 backdrop-blur-md bg-ink/95 border border-white/[0.04]">
+    <a href="index.html" class="flex items-center gap-3 group shrink-0">
+      <span class="w-10 h-10 rounded-2xl neu-card flex items-center justify-center p-1.5 overflow-hidden transition-transform group-hover:scale-105">
+        <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+      </span>
+      <span class="hidden sm:flex flex-col leading-none">
+        <span class="font-display text-sm md:text-base tracking-[0.2em] font-medium uppercase text-white group-hover:text-accent transition-colors">Harry Duarte</span>
+        <span class="text-[9px] tracking-[0.25em] uppercase text-outline mt-1">Tattoo Atelier</span>
+      </span>
+    </a>
+    <nav class="hidden xl:flex items-center gap-1 neu-inset px-3 py-1.5 rounded-full">
+      <a class="nav-link is-active" data-spy-link href="index.html">Inicio</a>
+      <a class="nav-link" data-spy-link href="portafolio.html">Portafolio &amp; Flash</a>
+      <a class="nav-link" data-spy-link href="artistas.html">Artistas &amp; Filosofía</a>
+      <a class="nav-link" data-spy-link href="cuidados.html">Cuidados</a>
+    </nav>
+    <div class="flex items-center gap-3 shrink-0">
+      <a href="agendar.html" class="neu-button-primary rounded-full px-4 md:px-5 py-2.5 text-[0.68rem] uppercase tracking-widest flex items-center gap-1.5 hover:text-accent">
+        <span class="hidden sm:inline">Agendar Cita</span><span class="sm:hidden">Agendar</span>
+        <span class="material-symbols-outlined text-base" aria-hidden="true">calendar_month</span>
+      </a>
+      <button id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" class="xl:hidden neu-button rounded-full w-10 h-10 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-xl" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="fixed inset-0 z-40 hidden">
+  <div data-menu-backdrop class="absolute inset-0 bg-black/65 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+  <nav id="mobilePanel" class="absolute top-0 right-0 h-full w-72 max-w-[86%] bg-deep border-l border-white/5 px-5 py-6 flex flex-col gap-2 translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto">
+    <div class="flex items-center justify-between mb-3 pb-4 border-b border-white/[0.05]">
+      <span class="text-[10px] uppercase tracking-[0.25em] text-outline">Navegación</span>
+      <button type="button" data-menu-close aria-label="Cerrar menú" class="neu-button rounded-full w-9 h-9 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-lg" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <a class="mobile-nav-link is-active" href="index.html">Inicio</a>
+    <a class="mobile-nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+    <a class="mobile-nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+    <a class="mobile-nav-link" href="cuidados.html">Cuidados</a>
+    <a class="mobile-nav-link mt-4 neu-button-primary justify-center text-white hover:text-accent" href="agendar.html">Agendar Cita</a>
+    <a class="mobile-nav-link mt-auto justify-center" href="https://wa.me/584120537930" target="_blank" rel="noopener">WhatsApp +58 412 053 7930</a>
+  </nav>
+</div>
+
+<main class="w-full pt-24 md:pt-28 pb-4">
+  <div class="max-w-shell mx-auto px-4 md:px-8 flex flex-col gap-16 md:gap-24">
+
+    <!-- HERO -->
+    <section id="inicio" data-spy class="relative w-full rounded-3xl neu-card p-6 md:p-12 overflow-hidden">
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 flex flex-col items-start space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full neu-inset text-accent text-[11px] tracking-widest uppercase">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent badge-dot"></span>
+            <span>Harry Duarte • Artista del tatuaje • Diseños personalizados &amp; únicos</span>
+          </div>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-white uppercase leading-[1.08] tracking-tight">
+            Harry Duarte.<br>
+            <span class="italic font-light text-3xl sm:text-4xl lg:text-5xl text-muted">Maestría en la piel.</span>
+          </h1>
+          <p class="text-base md:text-lg text-muted max-w-xl font-light leading-relaxed">
+            Pionero con más de 23 años consagrados a la excelencia y devoción anatómica. Harry Duarte concibe cada trazo como una pieza irrepetible de alta costura: un diálogo íntimo entre rigor quirúrgico, estética sombría y la trascendencia del arte permanente.
+          </p>
+          <div class="pt-2 flex flex-wrap items-center gap-4 w-full sm:w-auto">
+            <a href="agendar.html" class="w-full sm:w-auto px-7 py-3.5 neu-button-primary rounded-2xl text-[0.7rem] uppercase tracking-widest text-center flex items-center justify-center gap-2 hover:text-accent">
+              Agendar Consulta
+              <span class="material-symbols-outlined text-base" aria-hidden="true">edit_note</span>
+            </a>
+            <a href="portafolio.html" class="w-full sm:w-auto px-7 py-3.5 neu-button rounded-2xl text-muted hover:text-white text-[0.7rem] uppercase tracking-widest text-center flex items-center justify-center gap-2">
+              Explorar Galería
+              <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+          <div class="pt-4 w-full max-w-2xl">
+            <div class="neu-inset rounded-2xl p-4 sm:p-5 grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div class="flex flex-col border-r border-white/[0.03] pr-2">
+                <span class="font-display text-2xl text-white">+23 <span class="text-accent text-xs font-medium">AÑOS</span></span>
+                <span class="text-[10px] text-outline uppercase tracking-wider mt-0.5">Trayectoria en Tatuaje</span>
+              </div>
+              <div class="flex flex-col sm:border-r border-white/[0.03] sm:pr-2">
+                <span class="font-display text-2xl text-white">100%</span>
+                <span class="text-[10px] text-outline uppercase tracking-wider mt-0.5">Tinta Pura de Autor</span>
+              </div>
+              <div class="flex flex-col border-r border-white/[0.03] pr-2">
+                <span class="font-display text-2xl text-white">0.15<span class="text-accent text-xs font-medium">mm</span></span>
+                <span class="text-[10px] text-outline uppercase tracking-wider mt-0.5">Single Needle</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-display text-2xl text-white">Nivel III</span>
+                <span class="text-[10px] text-outline uppercase tracking-wider mt-0.5">Higiene Quirúrgica</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative flex flex-col items-center justify-center">
+          <div class="relative w-full aspect-[4/5] rounded-3xl neu-card p-3.5 overflow-hidden">
+            <div class="relative w-full h-full rounded-2xl overflow-hidden neu-inset">
+              <img src="assets/img/hero-harry.png" alt="Retrato oficial del artista Harry Duarte en su atelier" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-transparent to-transparent opacity-75 pointer-events-none"></div>
+              <div class="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl neu-card bg-surface/90 backdrop-blur-md flex items-center justify-between gap-3">
+                <div>
+                  <p class="text-[10px] text-accent uppercase tracking-widest">Harry Duarte • Master Tattoo Artist</p>
+                  <p class="text-xs text-white mt-0.5">Más de 23 años de trayectoria &amp; autoría</p>
+                </div>
+                <span class="material-symbols-outlined text-accent text-lg neu-inset p-1.5 rounded-full shrink-0" aria-hidden="true">verified</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 w-full neu-inset rounded-2xl p-4 flex items-center justify-between gap-4">
+            <div>
+              <p class="text-[10px] uppercase tracking-widest text-outline">Agenda selectiva</p>
+              <p class="text-xs text-bone mt-1">Cupo limitado por mes • Valera, Edo. Trujillo</p>
+            </div>
+            <a href="agendar.html" class="neu-button rounded-full px-4 py-2 text-[0.65rem] uppercase tracking-widest text-accent hover:text-white shrink-0">Reservar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTILOS -->
+    <section class="w-full">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 px-2">
+        <div>
+          <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-2">
+            Vocabulario Visual
+          </div>
+          <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">Estilos Distintivos</h2>
+        </div>
+        <p class="text-sm text-muted max-w-md leading-relaxed">
+          Cada disciplina es ejecutada con pigmentos orgánicos de saturación extrema y agujas quirúrgicas de grado médico.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="portafolio.html?filtro=blackwork" class="group neu-card rounded-3xl p-6 flex flex-col justify-between h-96 transition-all hover:-translate-y-1">
+          <div>
+            <div class="w-9 h-9 rounded-2xl neu-inset flex items-center justify-center text-accent text-xs font-semibold mb-4">01</div>
+            <span class="text-[10px] text-outline tracking-widest uppercase">Discipline</span>
+            <h3 class="font-display text-xl text-white uppercase mt-1">Blackwork Geométrico</h3>
+            <p class="text-xs text-muted mt-3 leading-relaxed">Bloques de carbón absoluto yuxtapuestos con patrones de geometría sagrada y simetría arquitectónica implacable.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-white/[0.04]">
+            <span class="text-[11px] text-accent uppercase tracking-wider group-hover:text-white transition-colors">Ver Obras</span>
+            <span class="w-8 h-8 rounded-full neu-button flex items-center justify-center text-accent group-hover:text-white">
+              <span class="material-symbols-outlined text-sm group-arrow transition-transform" aria-hidden="true">north_east</span>
+            </span>
+          </div>
+        </a>
+        <a href="portafolio.html?filtro=dark-realism" class="group neu-card rounded-3xl p-6 flex flex-col justify-between h-96 transition-all hover:-translate-y-1">
+          <div>
+            <div class="w-9 h-9 rounded-2xl neu-inset flex items-center justify-center text-accent text-xs font-semibold mb-4">02</div>
+            <span class="text-[10px] text-outline tracking-widest uppercase">Discipline</span>
+            <h3 class="font-display text-xl text-white uppercase mt-1">Realismo Sombrío</h3>
+            <p class="text-xs text-muted mt-3 leading-relaxed">Micro-gradientes tonales, esculturas clásicas fracturadas y texturas tenebristas de inspiración renacentista y barroca.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-white/[0.04]">
+            <span class="text-[11px] text-accent uppercase tracking-wider group-hover:text-white transition-colors">Ver Obras</span>
+            <span class="w-8 h-8 rounded-full neu-button flex items-center justify-center text-accent group-hover:text-white">
+              <span class="material-symbols-outlined text-sm group-arrow transition-transform" aria-hidden="true">north_east</span>
+            </span>
+          </div>
+        </a>
+        <a href="portafolio.html?filtro=blackwork" class="group neu-card rounded-3xl p-6 flex flex-col justify-between h-96 transition-all hover:-translate-y-1">
+          <div>
+            <div class="w-9 h-9 rounded-2xl neu-inset flex items-center justify-center text-accent text-xs font-semibold mb-4">03</div>
+            <span class="text-[10px] text-outline tracking-widest uppercase">Discipline</span>
+            <h3 class="font-display text-xl text-white uppercase mt-1">Dark Lettering</h3>
+            <p class="text-xs text-muted mt-3 leading-relaxed">Caligrafía visceral, fracturas góticas modernistas y tipografía gestual diseñada específicamente sobre la anatomía ósea.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-white/[0.04]">
+            <span class="text-[11px] text-accent uppercase tracking-wider group-hover:text-white transition-colors">Ver Obras</span>
+            <span class="w-8 h-8 rounded-full neu-button flex items-center justify-center text-accent group-hover:text-white">
+              <span class="material-symbols-outlined text-sm group-arrow transition-transform" aria-hidden="true">north_east</span>
+            </span>
+          </div>
+        </a>
+        <a href="portafolio.html?filtro=flash" class="group neu-card rounded-3xl p-6 flex flex-col justify-between h-96 transition-all hover:-translate-y-1">
+          <div>
+            <div class="w-9 h-9 rounded-2xl neu-inset flex items-center justify-center text-accent text-xs font-semibold mb-4">04</div>
+            <span class="text-[10px] text-outline tracking-widest uppercase">Discipline</span>
+            <h3 class="font-display text-xl text-white uppercase mt-1">Flash Editorial</h3>
+            <p class="text-xs text-muted mt-3 leading-relaxed">Piezas de tiraje único e irrepetible. Motivos de iconografía sacra pagana, dagas ornamentadas y botánica marchita.</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-white/[0.04]">
+            <span class="text-[11px] text-accent uppercase tracking-wider group-hover:text-white transition-colors">Explorar Flash</span>
+            <span class="w-8 h-8 rounded-full neu-button flex items-center justify-center text-accent group-hover:text-white">
+              <span class="material-symbols-outlined text-sm group-arrow transition-transform" aria-hidden="true">north_east</span>
+            </span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- OBRAS DESTACADAS -->
+    <section class="w-full">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 px-2">
+        <div>
+          <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-2">
+            Curaduría Reciente
+          </div>
+          <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">Obras Destacadas</h2>
+        </div>
+        <a href="portafolio.html" class="neu-button px-5 py-2.5 rounded-full text-[0.7rem] uppercase text-accent hover:text-white tracking-wider inline-flex items-center gap-2 self-start md:self-auto">
+          Ver Portafolio Completo
+          <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <a href="portafolio.html" class="md:col-span-8 group neu-card rounded-3xl p-3.5 min-h-[460px] flex flex-col">
+          <div class="relative w-full flex-1 rounded-2xl overflow-hidden neu-inset">
+            <img src="assets/img/obra-leon.jpg" alt="Tatuaje realista de león en el pecho por Harry Duarte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-[#141519]/40 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <span class="inline-block neu-inset px-3 py-1 rounded-full text-[10px] text-accent tracking-widest uppercase mb-2">Dark Realism • Pieza de Pecho</span>
+              <h3 class="font-display text-2xl md:text-3xl text-white uppercase">León Monárquico</h3>
+              <p class="text-xs md:text-sm text-muted max-w-lg mt-2 leading-relaxed">Composición de gran impacto anatómico en pectoral. Saturación de negros contrastados, textura minuciosa de melena y ferocidad orgánica.</p>
+            </div>
+          </div>
+        </a>
+        <a href="portafolio.html" class="md:col-span-4 group neu-card rounded-3xl p-3.5 min-h-[460px] flex flex-col">
+          <div class="relative w-full flex-1 rounded-2xl overflow-hidden neu-inset">
+            <img src="assets/img/obra-retrato.jpg" alt="Retrato hiperrealista en el brazo por Harry Duarte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-[#141519]/40 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <span class="inline-block neu-inset px-3 py-1 rounded-full text-[10px] text-accent tracking-widest uppercase mb-2">Micro-Realismo de Retrato</span>
+              <h3 class="font-display text-xl text-white uppercase">Retrato Conmemorativo</h3>
+              <p class="text-xs text-muted mt-1.5 leading-relaxed">Aguja 03RL y escala de grises diluida para capturar la calidez de la mirada y las sutiles líneas de expresión.</p>
+            </div>
+          </div>
+        </a>
+        <a href="portafolio.html" class="md:col-span-4 group neu-card rounded-3xl p-3.5 min-h-[380px] flex flex-col">
+          <div class="relative w-full flex-1 rounded-2xl overflow-hidden neu-inset">
+            <img src="assets/img/obra-aguilas.jpg" alt="Composición simétrica de águilas enfrentadas por Harry Duarte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-[#141519]/40 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block neu-inset px-2.5 py-0.5 rounded-full text-[10px] text-accent tracking-widest uppercase mb-1">Simetría &amp; Blackwork</span>
+              <h3 class="font-display text-lg text-white uppercase">Heráldica Bicéfala</h3>
+              <p class="text-xs text-muted mt-1">Geometría central con águilas enfrentadas en armonía con la clavícula y el torso.</p>
+            </div>
+          </div>
+        </a>
+        <a href="portafolio.html" class="md:col-span-4 group neu-card rounded-3xl p-3.5 min-h-[380px] flex flex-col">
+          <div class="relative w-full flex-1 rounded-2xl overflow-hidden neu-inset">
+            <img src="assets/img/obra-aguila.jpg" alt="Tatuaje de águila con sombras profundas en pectoral por Harry Duarte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-[#141519]/40 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block neu-inset px-2.5 py-0.5 rounded-full text-[10px] text-accent tracking-widest uppercase mb-1">Realismo de Aves</span>
+              <h3 class="font-display text-lg text-white uppercase">Águila Imperial</h3>
+              <p class="text-xs text-muted mt-1">Plumaje con gradientes sombríos envolviendo el relieve del músculo pectoral.</p>
+            </div>
+          </div>
+        </a>
+        <a href="portafolio.html" class="md:col-span-4 group neu-card rounded-3xl p-3.5 min-h-[380px] flex flex-col">
+          <div class="relative w-full flex-1 rounded-2xl overflow-hidden neu-inset">
+            <img src="assets/img/obra-shishi.jpg" alt="Tatuaje oriental de león guardián con caligrafía gótica por Harry Duarte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-[#141519]/40 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-5">
+              <span class="inline-block neu-inset px-2.5 py-0.5 rounded-full text-[10px] text-accent tracking-widest uppercase mb-1">Oriental &amp; Lettering</span>
+              <h3 class="font-display text-lg text-white uppercase">Shishi Guardián</h3>
+              <p class="text-xs text-muted mt-1">Bestiario oriental con saturación densa y caligrafía gótica sobre el muslo.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- MANIFIESTO -->
+    <section class="w-full neu-card rounded-3xl p-6 md:p-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5 flex flex-col">
+          <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-3 self-start">
+            El Manifiesto
+          </div>
+          <h2 class="font-display text-3xl md:text-5xl text-white uppercase leading-none tracking-tight">
+            Sin trucos.<br>Sin concesiones.<br>
+            <span class="italic font-light text-3xl md:text-5xl text-accent">Solo rigor.</span>
+          </h2>
+          <div class="mt-8 p-6 rounded-2xl neu-inset border border-white/[0.02]">
+            <p class="font-display text-lg md:text-xl italic text-white leading-snug">"El cuerpo es el soporte más noble y exigente que existe en el arte visual. No admite arrepentimientos."</p>
+            <p class="text-[10px] uppercase tracking-widest text-accent mt-4">— Harry Duarte • Más de 23 años de maestría • Piezas únicas &amp; rigor clínico</p>
+          </div>
+        </div>
+        <div class="lg:col-span-7 space-y-4">
+          <div class="p-5 md:p-6 rounded-2xl neu-card-sm transition-transform hover:-translate-y-0.5">
+            <div class="flex items-center gap-3.5 mb-2">
+              <div class="w-9 h-9 rounded-xl neu-inset flex items-center justify-center text-accent shrink-0">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">sanitizer</span>
+              </div>
+              <h3 class="font-display text-lg md:text-xl text-white uppercase">Esterilización y Grado Médico</h3>
+            </div>
+            <p class="text-xs md:text-sm text-muted pl-12 leading-relaxed">Cabina de atmósfera controlada con autoclave de clase B y materiales 100% descartables de un solo uso de origen quirúrgico. Protocolo hospitalario certificado.</p>
+          </div>
+          <div class="p-5 md:p-6 rounded-2xl neu-card-sm transition-transform hover:-translate-y-0.5">
+            <div class="flex items-center gap-3.5 mb-2">
+              <div class="w-9 h-9 rounded-xl neu-inset flex items-center justify-center text-accent shrink-0">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">architecture</span>
+              </div>
+              <h3 class="font-display text-lg md:text-xl text-white uppercase">Ergonomía &amp; Adaptabilidad Ósea</h3>
+            </div>
+            <p class="text-xs md:text-sm text-muted pl-12 leading-relaxed">No adaptamos plantillas estándar. El diseño se dibuja o ajusta directamente sobre tu fisonomía viva respetando las líneas de tensión muscular y el movimiento orgánico del cuerpo.</p>
+          </div>
+          <div class="p-5 md:p-6 rounded-2xl neu-card-sm transition-transform hover:-translate-y-0.5">
+            <div class="flex items-center gap-3.5 mb-2">
+              <div class="w-9 h-9 rounded-xl neu-inset flex items-center justify-center text-accent shrink-0">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">lock_clock</span>
+              </div>
+              <h3 class="font-display text-lg md:text-xl text-white uppercase">Privacidad Monástica</h3>
+            </div>
+            <p class="text-xs md:text-sm text-muted pl-12 leading-relaxed">El atelier permanece cerrado a transeúntes. No hay interrupciones ni espectadores. Solo el artista, la música curada en vinilo y la concentración absoluta requerida por la aguja.</p>
+          </div>
+          <a href="artistas.html" class="flex items-center justify-between p-5 rounded-2xl neu-button text-left group">
+            <div>
+              <p class="text-[10px] uppercase tracking-widest text-outline">Conoce al equipo</p>
+              <p class="font-display text-lg text-white uppercase mt-1">Artistas &amp; Filosofía</p>
+            </div>
+            <span class="w-9 h-9 rounded-full neu-inset grid place-items-center text-accent group-hover:text-white shrink-0">
+              <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="w-full">
+      <div class="mb-8 px-2">
+        <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-2">
+          Coleccionistas
+        </div>
+        <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">Palabras de Clientes</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="neu-card rounded-3xl p-6 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-accent mb-4 neu-inset px-3 py-1.5 rounded-full w-fit">
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+            </div>
+            <p class="text-sm text-bone italic leading-relaxed">"La pulcritud de las líneas desafía cualquier expectativa. Un año después de la sesión, la densidad del negro permanece inalterable como si fuera esmalte líquido."</p>
+          </div>
+          <div class="pt-6 mt-4 border-t border-white/[0.04]">
+            <p class="text-xs uppercase text-white tracking-wider font-semibold">Valentina M. • Directora de Arte</p>
+            <p class="text-[11px] text-outline mt-0.5">Obra de torso completo</p>
+          </div>
+        </div>
+        <div class="neu-card rounded-3xl p-6 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-accent mb-4 neu-inset px-3 py-1.5 rounded-full w-fit">
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+            </div>
+            <p class="text-sm text-bone italic leading-relaxed">"La experiencia es de alta costura total. Cero distracciones, conversación erudita sobre arte sombrío y un respeto ceremonial por el dolor y la calma."</p>
+          </div>
+          <div class="pt-6 mt-4 border-t border-white/[0.04]">
+            <p class="text-xs uppercase text-white tracking-wider font-semibold">Rodrigo G. • Músico &amp; Compositor</p>
+            <p class="text-[11px] text-outline mt-0.5">Manga blackwork geométrico</p>
+          </div>
+        </div>
+        <div class="neu-card rounded-3xl p-6 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex gap-1 text-accent mb-4 neu-inset px-3 py-1.5 rounded-full w-fit">
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">star</span>
+            </div>
+            <p class="text-sm text-bone italic leading-relaxed">"Buscaba un micro-realismo que no se convirtiera en una mancha difusa en diez años. La precisión técnica que aplican aquí pertenece a otra liga."</p>
+          </div>
+          <div class="pt-6 mt-4 border-t border-white/[0.04]">
+            <p class="text-xs uppercase text-white tracking-wider font-semibold">Elena R. • Arquitecta</p>
+            <p class="text-[11px] text-outline mt-0.5">Pieza de espalda en aguja única</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="w-full neu-card rounded-3xl p-8 md:p-14 text-center relative overflow-hidden">
+      <div class="max-w-3xl mx-auto flex flex-col items-center space-y-5 relative z-10">
+        <div class="neu-inset px-4 py-1.5 rounded-full text-accent text-[10px] uppercase tracking-widest">
+          Agenda selectiva • Cupo limitado
+        </div>
+        <h2 class="font-display text-3xl md:text-5xl text-white uppercase tracking-tight">
+          Tu próxima obra comienza con una conversación
+        </h2>
+        <p class="text-sm md:text-base text-muted max-w-2xl font-light leading-relaxed">
+          Aceptamos un número deliberadamente reducido de proyectos mensuales para garantizar inmersión creativa plena y cicatrización supervisada de cada pieza.
+        </p>
+        <div class="pt-3 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+          <a href="agendar.html" class="w-full sm:w-auto px-8 py-3.5 neu-button-primary rounded-2xl text-[0.7rem] uppercase tracking-widest text-white hover:text-accent transition-all">
+            Solicitar Consulta con Harry Duarte
+          </a>
+          <a href="cuidados.html" class="w-full sm:w-auto px-7 py-3.5 neu-button rounded-2xl text-muted hover:text-white text-[0.7rem] uppercase tracking-widest transition-all">
+            Guía de Cuidados
+          </a>
+        </div>
+        <p class="text-[11px] text-outline pt-2">
+          Tiempo estimado de respuesta para propuestas de proyecto: 24 a 48 horas laborales.
+        </p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="w-full bg-[#18191e] border-t border-white/[0.03] pt-14 pb-10 mt-16">
+  <div class="max-w-shell mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-white/[0.04]">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 rounded-xl neu-card flex items-center justify-center overflow-hidden p-1.5">
+            <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+          </span>
+          <p class="font-display text-lg uppercase tracking-wider text-white">Harry Duarte</p>
+        </div>
+        <p class="text-xs text-outline max-w-xs leading-relaxed">Estudio privado del artista Harry Duarte. Bespoke haute-couture fine line y blackwork contemporáneo bajo rigurosa precisión estética.</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Atelier &amp; Ubicación</p>
+        <p class="text-xs text-muted">Valera, Estado Trujillo</p>
+        <p class="text-xs text-muted mt-1">Venezuela</p>
+        <p class="text-xs text-accent mt-3">Acceso exclusivo con cita previa</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Horario</p>
+        <p class="text-xs text-muted">Martes — Sábado: 11:00 — 20:00</p>
+        <p class="text-xs text-muted mt-1">Domingo &amp; Lunes: Cerrado / Convención</p>
+        <a href="agendar.html" class="inline-block text-xs text-accent hover:text-white transition-colors mt-3">Agendar una cita →</a>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Contacto Directo</p>
+        <p class="text-xs text-muted mb-4">Escríbenos por WhatsApp para consultar disponibilidad, presupuestos y reservas de flash.</p>
+        <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.65rem] uppercase tracking-widest text-accent hover:text-white">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+          +58 412 053 7930
+        </a>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <p class="text-[11px] uppercase tracking-widest text-outline">© <span class="js-year"></span> Harry Duarte. Todos los derechos reservados.</p>
+      <p class="text-[11px] uppercase tracking-widest text-outline">Blackwork &amp; Fine Line Luxury</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast neu-card px-5 py-3.5 rounded-2xl text-sm text-bone"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

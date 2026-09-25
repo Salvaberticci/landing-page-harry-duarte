@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agendar Cita — Harry Duarte Tattoo Atelier</title>
+<meta name="description" content="Solicitud de cita en el atelier privado de Harry Duarte, Valera, Estado Trujillo. Elige tipo de obra, zona, artista, fecha y turno: confirmación por WhatsApp.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ink text-bone font-sans antialiased min-h-screen">
+
+<header id="siteHeader" class="fixed top-0 w-full z-50 px-4 md:px-8 py-3">
+  <div class="max-w-shell mx-auto rounded-3xl neu-flat px-5 md:px-8 py-3 flex items-center justify-between gap-4 backdrop-blur-md bg-ink/95 border border-white/[0.04]">
+    <a href="index.html" class="flex items-center gap-3 group shrink-0">
+      <span class="w-10 h-10 rounded-2xl neu-card flex items-center justify-center p-1.5 overflow-hidden transition-transform group-hover:scale-105">
+        <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+      </span>
+      <span class="hidden sm:flex flex-col leading-none">
+        <span class="font-display text-sm md:text-base tracking-[0.2em] font-medium uppercase text-white group-hover:text-accent transition-colors">Harry Duarte</span>
+        <span class="text-[9px] tracking-[0.25em] uppercase text-outline mt-1">Tattoo Atelier</span>
+      </span>
+    </a>
+    <nav class="hidden xl:flex items-center gap-1 neu-inset px-3 py-1.5 rounded-full">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+      <a class="nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+      <a class="nav-link" href="cuidados.html">Cuidados</a>
+    </nav>
+    <div class="flex items-center gap-3 shrink-0">
+      <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button rounded-full px-4 md:px-5 py-2.5 text-[0.68rem] uppercase tracking-widest flex items-center gap-1.5 text-accent hover:text-white">
+        <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+        <span class="hidden sm:inline">WhatsApp</span>
+      </a>
+      <button id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" class="xl:hidden neu-button rounded-full w-10 h-10 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-xl" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="fixed inset-0 z-40 hidden">
+  <div data-menu-backdrop class="absolute inset-0 bg-black/65 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+  <nav id="mobilePanel" class="absolute top-0 right-0 h-full w-72 max-w-[86%] bg-deep border-l border-white/5 px-5 py-6 flex flex-col gap-2 translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto">
+    <div class="flex items-center justify-between mb-3 pb-4 border-b border-white/[0.05]">
+      <span class="text-[10px] uppercase tracking-[0.25em] text-outline">Navegación</span>
+      <button type="button" data-menu-close aria-label="Cerrar menú" class="neu-button rounded-full w-9 h-9 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-lg" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <a class="mobile-nav-link" href="index.html">Inicio</a>
+    <a class="mobile-nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+    <a class="mobile-nav-link" href="artistas.html">Artistas &amp; Filosofía</a>
+    <a class="mobile-nav-link" href="cuidados.html">Cuidados</a>
+    <a class="mobile-nav-link is-active mt-4 neu-button-primary justify-center text-white hover:text-accent" href="agendar.html">Agendar Cita</a>
+    <a class="mobile-nav-link mt-auto justify-center" href="https://wa.me/584120537930" target="_blank" rel="noopener">WhatsApp +58 412 053 7930</a>
+  </nav>
+</div>
+
+<main class="w-full pt-24 md:pt-28 pb-6">
+  <div class="max-w-shell mx-auto px-4 md:px-8 flex flex-col gap-8">
+
+    <!-- Encabezado -->
+    <section class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]"></span>
+          <p class="text-[10px] uppercase tracking-widest text-outline">Protocolo de ingreso • Temporada <span class="js-year"></span></p>
+        </div>
+        <h1 class="font-display text-4xl md:text-5xl text-white uppercase tracking-tight leading-none">Solicitud de Cita</h1>
+        <p class="text-muted max-w-xl font-light leading-relaxed">
+          Atelier privado liderado por Harry Duarte — más de 23 años de trayectoria. Cada pieza se concibe de forma individual e irrepetible bajo rigurosa precisión estética.
+        </p>
+      </div>
+      <div class="neu-card rounded-2xl p-5 flex flex-col gap-2 min-w-[260px]">
+        <div class="flex justify-between items-center text-[10px] uppercase tracking-widest text-outline">
+          <span>Atelier status</span>
+          <span class="text-white flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent badge-dot animate-pulse"></span> Agenda abierta</span>
+        </div>
+        <p class="text-xs text-muted">Valera, Estado Trujillo • +23 años de legado</p>
+        <p class="text-[10px] uppercase tracking-wider text-accent pt-1">Anticipo estándar: $1,500 MXN</p>
+      </div>
+    </section>
+
+    <!-- Progreso -->
+    <div class="w-full neu-inset p-2 rounded-2xl border border-black/40">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2" id="progressTrack">
+        <button type="button" class="step-tab text-left p-3 rounded-xl transition-all neu-pressed text-white" data-step-indicator="1">
+          <p class="text-[10px] uppercase opacity-70">Fase 01</p>
+          <p class="text-[0.7rem] uppercase tracking-wider font-semibold">Tipo de obra</p>
+        </button>
+        <button type="button" class="step-tab text-left p-3 rounded-xl transition-all neu-flat text-muted hover:text-white" data-step-indicator="2">
+          <p class="text-[10px] uppercase opacity-75">Fase 02</p>
+          <p class="text-[0.7rem] uppercase tracking-wider font-semibold">Detalles &amp; cuerpo</p>
+        </button>
+        <button type="button" class="step-tab text-left p-3 rounded-xl transition-all neu-flat text-muted hover:text-white" data-step-indicator="3">
+          <p class="text-[10px] uppercase opacity-75">Fase 03</p>
+          <p class="text-[0.7rem] uppercase tracking-wider font-semibold">Fecha &amp; artista</p>
+        </button>
+        <button type="button" class="step-tab text-left p-3 rounded-xl transition-all neu-flat text-muted hover:text-white" data-step-indicator="4">
+          <p class="text-[10px] uppercase opacity-75">Fase 04</p>
+          <p class="text-[0.7rem] uppercase tracking-wider font-semibold">Contacto &amp; confirmar</p>
+        </button>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <form id="appointmentForm" class="w-full flex flex-col gap-8" novalidate>
+
+      <!-- PASO 1 -->
+      <section class="step-pane flex flex-col gap-6" id="step-1">
+        <div class="flex flex-col gap-2">
+          <span class="text-[10px] uppercase text-outline tracking-widest">[ 01 — Categoría de pieza ]</span>
+          <h2 class="font-display text-2xl md:text-3xl text-white uppercase">Selecciona la naturaleza de tu tatuaje</h2>
+          <p class="text-sm text-muted">Cada modalidad cuenta con un protocolo creativo y tiempo de elaboración específicos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <label class="cursor-pointer group">
+            <input class="sr-only" type="radio" name="project_type" value="custom" data-label="Diseño Personalizado" checked>
+            <div class="neu-option h-full p-6 rounded-2xl neu-card flex flex-col justify-between border border-white/[0.04]">
+              <div>
+                <div class="flex justify-between items-center mb-4">
+                  <div class="w-10 h-10 rounded-xl neu-flat grid place-items-center text-outline group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-xl" aria-hidden="true">draw</span>
+                  </div>
+                  <span class="text-[10px] text-outline px-2.5 py-1 rounded-full neu-inset">01</span>
+                </div>
+                <h3 class="font-display text-lg text-white uppercase mb-1">Diseño Personalizado</h3>
+                <p class="text-xs text-muted leading-relaxed">Pieza original a medida inspirada en tu concepto, anatomía y narrativa. Boceto final presentado el día de la sesión.</p>
+              </div>
+              <div class="pt-4 mt-4 flex items-center justify-between border-t border-white/[0.04]">
+                <span class="text-[10px] uppercase text-outline tracking-wider">Bespoke unique</span>
+                <span class="w-8 h-8 rounded-full neu-button grid place-items-center text-outline group-hover:text-white">
+                  <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+                </span>
+              </div>
+            </div>
+          </label>
+
+          <label class="cursor-pointer group">
+            <input class="sr-only" type="radio" name="project_type" value="flash" data-label="Flash Disponible">
+            <div class="neu-option h-full p-6 rounded-2xl neu-card flex flex-col justify-between border border-white/[0.04]">
+              <div>
+                <div class="flex justify-between items-center mb-4">
+                  <div class="w-10 h-10 rounded-xl neu-flat grid place-items-center text-outline group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-xl" aria-hidden="true">auto_awesome</span>
+                  </div>
+                  <span class="text-[10px] text-outline px-2.5 py-1 rounded-full neu-inset">02</span>
+                </div>
+                <h3 class="font-display text-lg text-white uppercase mb-1">Flash Disponible</h3>
+                <p class="text-xs text-muted leading-relaxed">Obra de archivo creada por el atelier. Se tatúa una sola vez para garantizar exclusividad al coleccionista.</p>
+              </div>
+              <div class="pt-4 mt-4 flex items-center justify-between border-t border-white/[0.04]">
+                <span class="text-[10px] uppercase text-outline tracking-wider">One-off archive</span>
+                <span class="w-8 h-8 rounded-full neu-button grid place-items-center text-outline group-hover:text-white">
+                  <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+                </span>
+              </div>
+            </div>
+          </label>
+
+          <label class="cursor-pointer group">
+            <input class="sr-only" type="radio" name="project_type" value="coverup" data-label="Cover Up / Reparación">
+            <div class="neu-option h-full p-6 rounded-2xl neu-card flex flex-col justify-between border border-white/[0.04]">
+              <div>
+                <div class="flex justify-between items-center mb-4">
+                  <div class="w-10 h-10 rounded-xl neu-flat grid place-items-center text-outline group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-xl" aria-hidden="true">layers</span>
+                  </div>
+                  <span class="text-[10px] text-outline px-2.5 py-1 rounded-full neu-inset">03</span>
+                </div>
+                <h3 class="font-display text-lg text-white uppercase mb-1">Cover Up / Reparación</h3>
+                <p class="text-xs text-muted leading-relaxed">Cobertura arquitectónica o re-estructuración de tatuajes antiguos mediante saturación y blackwork de alto contraste.</p>
+              </div>
+              <div class="pt-4 mt-4 flex items-center justify-between border-t border-white/[0.04]">
+                <span class="text-[10px] uppercase text-outline tracking-wider">Re-engineering</span>
+                <span class="w-8 h-8 rounded-full neu-button grid place-items-center text-outline group-hover:text-white">
+                  <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+                </span>
+              </div>
+            </div>
+          </label>
+
+          <label class="cursor-pointer group">
+            <input class="sr-only" type="radio" name="project_type" value="consultation" data-label="Consulta Previa">
+            <div class="neu-option h-full p-6 rounded-2xl neu-card flex flex-col justify-between border border-white/[0.04]">
+              <div>
+                <div class="flex justify-between items-center mb-4">
+                  <div class="w-10 h-10 rounded-xl neu-flat grid place-items-center text-outline group-hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-xl" aria-hidden="true">forum</span>
+                  </div>
+                  <span class="text-[10px] text-outline px-2.5 py-1 rounded-full neu-inset">04</span>
+                </div>
+                <h3 class="font-display text-lg text-white uppercase mb-1">Consulta Previa</h3>
+                <p class="text-xs text-muted leading-relaxed">Encuentro presencial de 30 minutos con Harry Duarte para analizar anatomía, viabilidad técnica y presupuesto.</p>
+              </div>
+              <div class="pt-4 mt-4 flex items-center justify-between border-t border-white/[0.04]">
+                <span class="text-[10px] uppercase text-outline tracking-wider">Studio dialogue</span>
+                <span class="w-8 h-8 rounded-full neu-button grid place-items-center text-outline group-hover:text-white">
+                  <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+                </span>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="flex justify-end pt-2">
+          <button type="button" data-next="2" class="neu-button text-white text-[0.7rem] uppercase tracking-widest px-8 py-3.5 rounded-full border border-white/10 hover:text-accent flex items-center gap-2 group">
+            Continuar a detalles
+            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- PASO 2 -->
+      <section class="step-pane hidden flex-col gap-8" id="step-2">
+        <div class="flex flex-col gap-2">
+          <span class="text-[10px] uppercase text-outline tracking-widest">[ 02 — Anatomía &amp; dimensión ]</span>
+          <h2 class="font-display text-2xl md:text-3xl text-white uppercase">Ubicación, escala &amp; referencias</h2>
+          <p class="text-sm text-muted">El flujo del cuerpo dicta la composición de cada línea.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <div class="flex flex-col gap-3">
+              <span class="text-[0.7rem] uppercase tracking-wider text-white">Zona del cuerpo</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="placement" value="Brazo / Antebrazo" data-label="Brazo / Antebrazo" checked>
+                  <div class="neu-option p-3 rounded-xl text-center neu-flat text-muted font-medium text-[0.7rem] uppercase tracking-wider border border-white/[0.03] text-center">Brazo / Antebrazo</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="placement" value="Espalda" data-label="Espalda Completa">
+                  <div class="neu-option p-3 rounded-xl text-center neu-flat text-muted font-medium text-[0.7rem] uppercase tracking-wider border border-white/[0.03]">Espalda</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="placement" value="Pecho / Torso" data-label="Pecho / Torso">
+                  <div class="neu-option p-3 rounded-xl text-center neu-flat text-muted font-medium text-[0.7rem] uppercase tracking-wider border border-white/[0.03]">Pecho / Torso</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="placement" value="Pierna" data-label="Pierna / Pantorrilla">
+                  <div class="neu-option p-3 rounded-xl text-center neu-flat text-muted font-medium text-[0.7rem] uppercase tracking-wider border border-white/[0.03]">Pierna / Pantorrilla</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="placement" value="Costillas" data-label="Costillas / Flanco">
+                  <div class="neu-option p-3 rounded-xl text-center neu-flat text-muted font-medium text-[0.7rem] uppercase tracking-wider border border-white/[0.03]">Costillas / Flanco</div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="placement" value="Manos / Cuello" data-label="Manos / Cuello">
+                  <div class="neu-option p-3 rounded-xl text-center neu-flat text-muted font-medium text-[0.7rem] uppercase tracking-wider border border-white/[0.03]">Manos / Cuello</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <span class="text-[0.7rem] uppercase tracking-wider text-white">Dimensión estimada</span>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="scale" value="Pequeño" data-label="Pequeño (&lt; 10 cm)" checked>
+                  <div class="neu-option h-full p-4 rounded-2xl neu-flat border border-white/[0.03] flex flex-col justify-between">
+                    <div>
+                      <p class="text-[10px] uppercase text-outline">ESC-01</p>
+                      <p class="font-display text-base text-white uppercase mt-1">Pequeño</p>
+                      <p class="text-xs text-muted mt-2">Menor a 10 cm. Micro-realismo, tipografía bespoke y botánica.</p>
+                    </div>
+                    <p class="text-[10px] uppercase text-outline mt-4 pt-3 border-t border-white/[0.04]">1 sesión (~2-3 h)</p>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="scale" value="Mediano" data-label="Mediano (10-20 cm)">
+                  <div class="neu-option h-full p-4 rounded-2xl neu-flat border border-white/[0.03] flex flex-col justify-between">
+                    <div>
+                      <p class="text-[10px] uppercase text-outline">ESC-02</p>
+                      <p class="font-display text-base text-white uppercase mt-1">Mediano</p>
+                      <p class="text-xs text-muted mt-2">10 a 20 cm. Pieza focal para antebrazo, omóplato o muslo.</p>
+                    </div>
+                    <p class="text-[10px] uppercase text-outline mt-4 pt-3 border-t border-white/[0.04]">1-2 sesiones (~4-6 h)</p>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="scale" value="Gran Escala" data-label="Gran Escala (&gt; 20 cm)">
+                  <div class="neu-option h-full p-4 rounded-2xl neu-flat border border-white/[0.03] flex flex-col justify-between">
+                    <div>
+                      <p class="text-[10px] uppercase text-outline">ESC-03</p>
+                      <p class="font-display text-base text-white uppercase mt-1">Proyecto mayor</p>
+                      <p class="text-xs text-muted mt-2">Manga, torso o espalda entera. Enfoque anatómico y sesiones múltiples.</p>
+                    </div>
+                    <p class="text-[10px] uppercase text-outline mt-4 pt-3 border-t border-white/[0.04]">Múltiples sesiones</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label for="conceptDescription" class="text-[0.7rem] uppercase tracking-wider text-white">Descripción del concepto visual *</label>
+              <textarea id="conceptDescription" name="concept" rows="4" class="neu-input"
+                        placeholder="Describe los elementos visuales clave, simbología, atmósfera (dark, minimal, surreal) y cualquier cicatriz o detalle en la piel..."></textarea>
+              <span class="field-error" id="error-concept">Cuéntanos al menos una idea: mínimo 15 caracteres.</span>
+              <span class="text-[0.7rem] text-outline">Sé tan específico como desees. El atelier interpretará tu concepto bajo su propio canon.</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col gap-4">
+            <div class="neu-card rounded-2xl p-5 flex flex-col gap-4">
+              <div class="flex justify-between items-center gap-3">
+                <span class="text-[10px] uppercase tracking-widest text-white flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent badge-dot"></span> Referencias</span>
+                <span class="text-[10px] uppercase text-outline px-2 py-0.5 rounded-full neu-inset">JPG / PNG / PDF</span>
+              </div>
+              <div class="neu-inset rounded-2xl p-6 flex flex-col items-center text-center cursor-pointer transition-colors group border border-white/[0.03]" id="dropzoneBox">
+                <input type="file" id="fileUploadInput" multiple accept="image/*,.pdf" class="hidden">
+                <div class="w-12 h-12 rounded-full neu-flat grid place-items-center mb-2 text-outline group-hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-2xl" aria-hidden="true">cloud_upload</span>
+                </div>
+                <p class="text-[0.68rem] uppercase tracking-widest text-white">Arrastra o sube tus archivos</p>
+                <p class="text-xs text-outline mt-1 max-w-xs">Fotografías del área anatómica, tatuajes previos o ilustraciones de referencia.</p>
+                <span class="text-[10px] uppercase text-outline mt-3">Hasta 5 archivos (máx. 15 MB c/u)</span>
+              </div>
+              <div class="flex flex-col gap-2" id="fileUploadList"></div>
+            </div>
+
+            <div class="relative w-full h-44 rounded-2xl overflow-hidden neu-inset p-1 border border-white/[0.03]">
+              <img src="assets/img/estudio.jpg" alt="Fotografía editorial de un tatuaje fine line en la piel" class="w-full h-full object-cover rounded-xl">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#1a1c21] via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <p class="text-[10px] text-white uppercase font-medium">Criterio curatorial</p>
+                <p class="text-xs text-outline">Fine line 0.25 mm &amp; saturation work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pt-2">
+          <button type="button" data-prev="1" class="neu-button text-muted text-[0.7rem] uppercase tracking-widest px-6 py-3.5 rounded-full border border-white/5 hover:text-white flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_back</span> Anterior
+          </button>
+          <button type="button" data-next="3" class="neu-button text-white text-[0.7rem] uppercase tracking-widest px-8 py-3.5 rounded-full border border-white/10 hover:text-accent flex items-center gap-2 group">
+            Continuar a agenda
+            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- PASO 3 -->
+      <section class="step-pane hidden flex-col gap-8" id="step-3">
+        <div class="flex flex-col gap-2">
+          <span class="text-[10px] uppercase text-outline tracking-widest">[ 03 — Disponibilidad ]</span>
+          <h2 class="font-display text-2xl md:text-3xl text-white uppercase">Selección de artista &amp; calendario</h2>
+          <p class="text-sm text-muted">Consulta las fechas disponibles para sesionar en el atelier de Valera, Estado Trujillo.</p>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <span class="text-[0.7rem] uppercase tracking-wider text-white">Artistas residentes</span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <label class="cursor-pointer group">
+              <input class="sr-only" type="radio" name="selected_artist" value="Harry Duarte" data-label="Harry Duarte (Maestro fundador)" checked>
+              <div class="neu-option neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
+                <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
+                  <img src="assets/img/hero-harry.png" alt="Harry Duarte" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="min-w-0">
+                  <p class="font-display text-base text-white uppercase truncate">Harry Duarte</p>
+                  <p class="text-[10px] text-outline uppercase tracking-wider">Maestro fundador</p>
+                  <p class="text-xs text-muted mt-1">Blackwork, realismo y gran formato</p>
+                </div>
+              </div>
+            </label>
+            <label class="cursor-pointer group">
+              <input class="sr-only" type="radio" name="selected_artist" value="Valeria K." data-label="Valeria K. (Fine Line &amp; Botánica)">
+              <div class="neu-option neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
+                <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
+                  <img src="assets/img/artista-valeria.jpg" alt="Valeria K." class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="min-w-0">
+                  <p class="font-display text-base text-white uppercase truncate">Valeria K.</p>
+                  <p class="text-[10px] text-outline uppercase tracking-wider">Fine Line &amp; Botánica</p>
+                  <p class="text-xs text-muted mt-1">Cupos próximos: este mes</p>
+                </div>
+              </div>
+            </label>
+            <label class="cursor-pointer group">
+              <input class="sr-only" type="radio" name="selected_artist" value="Mateo Thorne" data-label="Mateo Thorne (Brutalist Blackwork)">
+              <div class="neu-option neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
+                <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
+                  <img src="assets/img/artista-mateo.jpg" alt="Mateo Thorne" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="min-w-0">
+                  <p class="font-display text-base text-white uppercase truncate">Mateo Thorne</p>
+                  <p class="text-[10px] text-outline uppercase tracking-wider">Brutalist Blackwork</p>
+                  <p class="text-xs text-muted mt-1">Cupos próximos: siguiente mes</p>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-8 neu-flat rounded-2xl p-5 flex flex-col gap-4 border border-white/[0.03]">
+            <div class="flex items-center justify-between pb-3 border-b border-white/[0.04]">
+              <div>
+                <h3 class="font-display text-lg uppercase text-white" id="calendarTitle">—</h3>
+                <p class="text-[10px] text-outline uppercase tracking-widest">Atelier Valera • Horario local</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button type="button" id="calPrev" aria-label="Mes anterior" class="w-9 h-9 rounded-full neu-button grid place-items-center text-muted hover:text-white transition-colors border border-white/5">
+                  <span class="material-symbols-outlined text-sm" aria-hidden="true">chevron_left</span>
+                </button>
+                <button type="button" id="calNext" aria-label="Mes siguiente" class="w-9 h-9 rounded-full neu-button grid place-items-center text-muted hover:text-white transition-colors border border-white/5">
+                  <span class="material-symbols-outlined text-sm" aria-hidden="true">chevron_right</span>
+                </button>
+              </div>
+            </div>
+            <div class="grid grid-cols-7 text-center text-[10px] text-outline uppercase tracking-wider py-1">
+              <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+            </div>
+            <div class="grid grid-cols-7 gap-2" id="calendarDays"></div>
+            <div class="flex flex-wrap items-center gap-5 pt-1 text-outline text-[10px] uppercase tracking-wider">
+              <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-md neu-pressed inline-block border border-white/10"></span> Seleccionado</div>
+              <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-md neu-flat inline-block"></span> Disponible</div>
+              <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-md neu-inset inline-block opacity-50"></span> Sin cupo</div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col gap-4">
+            <div class="neu-flat rounded-2xl p-5 flex flex-col gap-4 border border-white/[0.03]">
+              <div>
+                <span class="text-[0.68rem] uppercase tracking-widest text-white">Turno de sesión</span>
+                <p class="text-xs text-muted mt-1">Los tatuajes de alta duración requieren atención continua y luz óptima.</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="shift" value="Turno Mañana (11:00 - 15:30)" data-label="Turno Mañana (11:00 - 15:30)" checked>
+                  <div class="neu-option p-4 rounded-2xl neu-flat border border-white/[0.03]">
+                    <div class="flex justify-between items-center mb-1">
+                      <span class="font-display text-base text-white uppercase">Turno mañana</span>
+                      <span class="material-symbols-outlined text-outline" aria-hidden="true">wb_sunny</span>
+                    </div>
+                    <p class="text-[10px] text-outline">11:00 — 15:30 hrs</p>
+                    <p class="text-xs text-muted mt-2">Luz natural zenital. Ideal para fine line de máxima precisión.</p>
+                  </div>
+                </label>
+                <label class="cursor-pointer">
+                  <input class="sr-only" type="radio" name="shift" value="Turno Tarde (16:00 - 20:30)" data-label="Turno Tarde (16:00 - 20:30)">
+                  <div class="neu-option p-4 rounded-2xl neu-flat border border-white/[0.03]">
+                    <div class="flex justify-between items-center mb-1">
+                      <span class="font-display text-base text-white uppercase">Turno tarde</span>
+                      <span class="material-symbols-outlined text-outline" aria-hidden="true">dark_mode</span>
+                    </div>
+                    <p class="text-[10px] text-outline">16:00 — 20:30 hrs</p>
+                    <p class="text-xs text-muted mt-2">Atmósfera nocturna inmersiva con soundscape curado.</p>
+                  </div>
+                </label>
+              </div>
+              <div class="neu-inset rounded-xl p-3 border border-white/[0.03]">
+                <span class="text-[10px] uppercase text-outline">Fecha seleccionada:</span>
+                <p class="text-sm text-white font-medium" id="selectedDateDisplay">—</p>
+              </div>
+              <span class="field-error" id="error-date">Selecciona una fecha disponible en el calendario.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pt-2">
+          <button type="button" data-prev="2" class="neu-button text-muted text-[0.7rem] uppercase tracking-widest px-6 py-3.5 rounded-full border border-white/5 hover:text-white flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_back</span> Anterior
+          </button>
+          <button type="button" data-next="4" class="neu-button text-white text-[0.7rem] uppercase tracking-widest px-8 py-3.5 rounded-full border border-white/10 hover:text-accent flex items-center gap-2 group">
+            Datos &amp; protocolo
+            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- PASO 4 -->
+      <section class="step-pane hidden flex-col gap-8" id="step-4">
+        <div class="flex flex-col gap-2">
+          <span class="text-[10px] uppercase text-outline tracking-widest">[ 04 — Contacto &amp; reserva ]</span>
+          <h2 class="font-display text-2xl md:text-3xl text-white uppercase">Datos personales &amp; políticas del atelier</h2>
+          <p class="text-sm text-muted">Concluye tu solicitud: al enviarla se abre WhatsApp con todo el resumen listo para enviar.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <div class="neu-card rounded-2xl p-6 flex flex-col gap-4">
+              <h3 class="font-display text-lg uppercase text-white">Información del cliente</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex flex-col gap-1.5">
+                  <label for="clientName" class="text-[10px] uppercase text-outline tracking-wider">Nombre completo *</label>
+                  <input id="clientName" name="clientName" type="text" class="neu-input" placeholder="Ej. Camila Morales" autocomplete="name">
+                  <span class="field-error" id="error-clientName">Indica tu nombre completo.</span>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label for="clientPhone" class="text-[10px] uppercase text-outline tracking-wider">WhatsApp / Móvil *</label>
+                  <input id="clientPhone" name="clientPhone" type="tel" class="neu-input" placeholder="+58 412 000 0000" autocomplete="tel">
+                  <span class="field-error" id="error-clientPhone">Indica un número de teléfono válido (mínimo 7 dígitos).</span>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex flex-col gap-1.5">
+                  <label for="clientInstagram" class="text-[10px] uppercase text-outline tracking-wider">Instagram (@usuario)</label>
+                  <input id="clientInstagram" name="clientInstagram" type="text" class="neu-input" placeholder="@tu_cuenta">
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label for="medicalNotes" class="text-[10px] uppercase text-outline tracking-wider">Consideraciones dérmicas</label>
+                  <input id="medicalNotes" name="medicalNotes" type="text" class="neu-input" placeholder="Queloides, dermatitis, alergia al látex (opcional)">
+                </div>
+              </div>
+            </div>
+
+            <div class="neu-card rounded-2xl p-6 flex flex-col gap-4">
+              <h3 class="font-display text-lg uppercase text-white">Protocolo de reserva &amp; seña</h3>
+              <div class="flex flex-col gap-3 text-xs text-muted leading-relaxed">
+                <div class="flex gap-3 items-start">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0"></span>
+                  <p><strong class="text-white font-medium">Depósito de reserva:</strong> toda sesión formal requiere una seña de $1,500 MXN para bloquear la agenda. Se descuenta del costo final.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0"></span>
+                  <p><strong class="text-white font-medium">Política de cancelación:</strong> reprogramaciones sin costo con al menos 72 horas de anticipación. Después, la seña no se reembolsa.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0"></span>
+                  <p><strong class="text-white font-medium">Preparación previa:</strong> no ingerir alcohol ni anticoagulantes 24 h antes. Dormir bien, hidratar la zona 3 días antes y presentarse alimentado.</p>
+                </div>
+              </div>
+              <label class="flex items-start gap-3 cursor-pointer mt-2 pt-4 border-t border-white/[0.04]">
+                <input id="policyAgreement" type="checkbox" class="mt-1 w-4 h-4 rounded-md accent-[#dfc394] cursor-pointer">
+                <span class="text-[10px] uppercase tracking-wider text-white">Comprendo y acepto las políticas de seña, diseño personalizado y preparación previa del atelier.</span>
+              </label>
+              <span class="field-error" id="error-policy">Debes aceptar las políticas para continuar.</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col gap-4">
+            <div class="neu-card rounded-2xl p-6 flex flex-col gap-4">
+              <span class="text-[10px] uppercase tracking-widest text-outline">[ Resumen de reserva ]</span>
+              <p class="font-display text-2xl uppercase text-white">Sesión de Tatuaje</p>
+              <div class="flex flex-col gap-3 text-xs py-4 border-y border-white/[0.04]">
+                <div class="flex justify-between gap-4">
+                  <span class="text-outline uppercase text-[10px]">Modalidad:</span>
+                  <span class="text-white font-medium text-right" id="summaryProject">Diseño Personalizado</span>
+                </div>
+                <div class="flex justify-between gap-4">
+                  <span class="text-outline uppercase text-[10px]">Ubicación:</span>
+                  <span class="text-white font-medium text-right" id="summaryPlacement">Brazo / Antebrazo</span>
+                </div>
+                <div class="flex justify-between gap-4">
+                  <span class="text-outline uppercase text-[10px]">Escala:</span>
+                  <span class="text-white font-medium text-right" id="summaryScale">Pequeño (&lt; 10 cm)</span>
+                </div>
+                <div class="flex justify-between gap-4">
+                  <span class="text-outline uppercase text-[10px]">Artista:</span>
+                  <span class="text-white font-medium text-right" id="summaryArtist">Harry Duarte (Maestro fundador)</span>
+                </div>
+                <div class="flex justify-between gap-4">
+                  <span class="text-outline uppercase text-[10px]">Fecha:</span>
+                  <span class="text-white font-medium text-right" id="summaryDate">—</span>
+                </div>
+                <div class="flex justify-between gap-4">
+                  <span class="text-outline uppercase text-[10px]">Turno:</span>
+                  <span class="text-white font-medium text-right" id="summaryShift">Turno Mañana (11:00 - 15:30)</span>
+                </div>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex justify-between items-center">
+                  <span class="text-[10px] uppercase text-outline">Anticipo requerido:</span>
+                  <span class="font-display text-lg text-white font-bold">$1,500 MXN</span>
+                </div>
+                <p class="text-[11px] text-outline">El saldo restante se liquida el día de la cita con tarjeta o efectivo.</p>
+              </div>
+              <button type="submit" class="w-full neu-button-primary text-white text-[0.7rem] uppercase tracking-widest py-4 rounded-full border border-white/10 hover:text-accent transition-all flex items-center justify-center gap-2 mt-2 group">
+                Solicitar cita de tatuaje
+                <span class="material-symbols-outlined text-sm group-hover:scale-110 transition-transform" aria-hidden="true">send</span>
+              </button>
+              <div class="flex items-center justify-center gap-2 text-outline text-[10px] uppercase tracking-wider">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">verified_user</span>
+                Confirmación personalizada en menos de 24 horas
+              </div>
+            </div>
+
+            <div class="neu-card rounded-2xl p-4 flex items-center gap-4">
+              <div class="w-10 h-10 rounded-full neu-inset grid place-items-center shrink-0 text-outline">
+                <span class="material-symbols-outlined text-xl" aria-hidden="true">local_cafe</span>
+              </div>
+              <p class="text-xs text-muted">Tu sesión incluye barista de cortesía, set de curación estéril para 14 días e instrucciones de cuidado posterior.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-start pt-2">
+          <button type="button" data-prev="3" class="neu-button text-muted text-[0.7rem] uppercase tracking-widest px-6 py-3.5 rounded-full border border-white/5 hover:text-white flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_back</span> Modificar fecha
+          </button>
+        </div>
+      </section>
+    </form>
+  </div>
+</main>
+
+<!-- Modal de confirmación -->
+<div class="modal" id="confirmationModal" role="dialog" aria-modal="true" aria-labelledby="confirmationTitle">
+  <div class="neu-flat max-w-xl w-full p-8 rounded-3xl flex flex-col gap-4 shadow-2xl relative border border-white/10 max-h-[90vh] overflow-y-auto">
+    <div class="w-14 h-14 rounded-2xl neu-inset text-white grid place-items-center">
+      <span class="material-symbols-outlined text-3xl" aria-hidden="true">done</span>
+    </div>
+    <span class="text-[10px] uppercase tracking-widest text-outline">Folio de solicitud • <span id="folioNumber">#HD-0000</span></span>
+    <h2 id="confirmationTitle" class="font-display text-3xl uppercase text-white tracking-tight">Solicitud registrada</h2>
+    <p class="text-sm text-muted leading-relaxed">
+      Tu solicitud quedó guardada en este dispositivo. Pulsa el botón de WhatsApp para enviarla al atelier: se abrirá la conversación con todos los datos ya escritos.
+    </p>
+    <div class="neu-inset rounded-2xl p-4 flex flex-col gap-2 my-1 border border-white/[0.03]">
+      <p class="text-[10px] uppercase text-outline">Resumen</p>
+      <p id="confirmationSummary" class="text-xs text-white leading-relaxed whitespace-pre-line"></p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3 pt-1">
+      <a id="whatsappSend" href="#" target="_blank" rel="noopener" class="flex-1 neu-button-primary rounded-full px-6 py-3.5 text-[0.7rem] uppercase tracking-widest text-white hover:text-accent flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+        Enviar por WhatsApp
+      </a>
+      <button type="button" id="copyRequest" class="neu-button rounded-full px-6 py-3.5 text-[0.7rem] uppercase tracking-widest text-muted hover:text-white flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-base" aria-hidden="true">content_copy</span>
+        Copiar
+      </button>
+      <button type="button" id="closeConfirmation" class="neu-button rounded-full px-6 py-3.5 text-[0.7rem] uppercase tracking-widest text-muted hover:text-white">
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>
+
+<footer class="w-full bg-[#18191e] border-t border-white/[0.03] pt-14 pb-10 mt-16">
+  <div class="max-w-shell mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-white/[0.04]">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 rounded-xl neu-card flex items-center justify-center overflow-hidden p-1.5">
+            <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+          </span>
+          <p class="font-display text-lg uppercase tracking-wider text-white">Harry Duarte</p>
+        </div>
+        <p class="text-xs text-outline max-w-xs leading-relaxed">Estudio privado del artista Harry Duarte. Bespoke haute-couture fine line y blackwork contemporáneo bajo rigurosa precisión estética.</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Atelier &amp; Ubicación</p>
+        <p class="text-xs text-muted">Valera, Estado Trujillo</p>
+        <p class="text-xs text-muted mt-1">Venezuela</p>
+        <p class="text-xs text-accent mt-3">Acceso exclusivo con cita previa</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Horario</p>
+        <p class="text-xs text-muted">Martes — Sábado: 11:00 — 20:00</p>
+        <p class="text-xs text-muted mt-1">Domingo &amp; Lunes: Cerrado / Convención</p>
+        <a href="portafolio.html" class="inline-block text-xs text-accent hover:text-white transition-colors mt-3">Ver flash disponibles →</a>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Contacto Directo</p>
+        <p class="text-xs text-muted mb-4">Escríbenos por WhatsApp para consultar disponibilidad, presupuestos y reservas de flash.</p>
+        <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.65rem] uppercase tracking-widest text-accent hover:text-white">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+          +58 412 053 7930
+        </a>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <p class="text-[11px] uppercase tracking-widest text-outline">© <span class="js-year"></span> Harry Duarte. Todos los derechos reservados.</p>
+      <p class="text-[11px] uppercase tracking-widest text-outline">Blackwork &amp; Fine Line Luxury</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast neu-card px-5 py-3.5 rounded-2xl text-sm text-bone"></div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/agendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artistas &amp; Filosofía — Harry Duarte Tattoo Atelier</title>
+<meta name="description" content="Harry Duarte y el equipo residente del atelier: trayectoria, filosofía de trabajo, protocolo clínico y proceso creativo en Valera, Estado Trujillo.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ink text-bone font-sans antialiased min-h-screen">
+
+<header id="siteHeader" class="fixed top-0 w-full z-50 px-4 md:px-8 py-3">
+  <div class="max-w-shell mx-auto rounded-3xl neu-flat px-5 md:px-8 py-3 flex items-center justify-between gap-4 backdrop-blur-md bg-ink/95 border border-white/[0.04]">
+    <a href="index.html" class="flex items-center gap-3 group shrink-0">
+      <span class="w-10 h-10 rounded-2xl neu-card flex items-center justify-center p-1.5 overflow-hidden transition-transform group-hover:scale-105">
+        <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+      </span>
+      <span class="hidden sm:flex flex-col leading-none">
+        <span class="font-display text-sm md:text-base tracking-[0.2em] font-medium uppercase text-white group-hover:text-accent transition-colors">Harry Duarte</span>
+        <span class="text-[9px] tracking-[0.25em] uppercase text-outline mt-1">Tattoo Atelier</span>
+      </span>
+    </a>
+    <nav class="hidden xl:flex items-center gap-1 neu-inset px-3 py-1.5 rounded-full">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+      <a class="nav-link is-active" href="artistas.html">Artistas &amp; Filosofía</a>
+      <a class="nav-link" href="cuidados.html">Cuidados</a>
+    </nav>
+    <div class="flex items-center gap-3 shrink-0">
+      <a href="agendar.html" class="neu-button-primary rounded-full px-4 md:px-5 py-2.5 text-[0.68rem] uppercase tracking-widest flex items-center gap-1.5 hover:text-accent">
+        <span class="hidden sm:inline">Agendar Cita</span><span class="sm:hidden">Agendar</span>
+        <span class="material-symbols-outlined text-base" aria-hidden="true">calendar_month</span>
+      </a>
+      <button id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" class="xl:hidden neu-button rounded-full w-10 h-10 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-xl" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="fixed inset-0 z-40 hidden">
+  <div data-menu-backdrop class="absolute inset-0 bg-black/65 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+  <nav id="mobilePanel" class="absolute top-0 right-0 h-full w-72 max-w-[86%] bg-deep border-l border-white/5 px-5 py-6 flex flex-col gap-2 translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto">
+    <div class="flex items-center justify-between mb-3 pb-4 border-b border-white/[0.05]">
+      <span class="text-[10px] uppercase tracking-[0.25em] text-outline">Navegación</span>
+      <button type="button" data-menu-close aria-label="Cerrar menú" class="neu-button rounded-full w-9 h-9 grid place-items-center text-bone">
+        <span class="material-symbols-outlined text-lg" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <a class="mobile-nav-link" href="index.html">Inicio</a>
+    <a class="mobile-nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+    <a class="mobile-nav-link is-active" href="artistas.html">Artistas &amp; Filosofía</a>
+    <a class="mobile-nav-link" href="cuidados.html">Cuidados</a>
+    <a class="mobile-nav-link mt-4 neu-button-primary justify-center text-white hover:text-accent" href="agendar.html">Agendar Cita</a>
+    <a class="mobile-nav-link mt-auto justify-center" href="https://wa.me/584120537930" target="_blank" rel="noopener">WhatsApp +58 412 053 7930</a>
+  </nav>
+</div>
+
+<main class="w-full pt-24 md:pt-28 pb-4">
+  <div class="max-w-shell mx-auto px-4 md:px-8 flex flex-col gap-16">
+
+    <!-- Encabezado -->
+    <section class="neu-card p-6 md:p-10 rounded-3xl">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="inline-block w-2 h-2 rounded-full bg-accent badge-dot"></span>
+        <span class="text-[10px] uppercase tracking-widest text-outline">El Atelier • Valera, Estado Trujillo</span>
+      </div>
+      <h1 class="font-display text-4xl md:text-5xl text-white uppercase tracking-tight leading-none">Artistas &amp; Filosofía</h1>
+      <p class="text-muted mt-5 max-w-3xl font-light leading-relaxed">
+            Un estudio privado, deliberadamente pequeño. Cada artista del atelier fue seleccionado por dominio técnico
+            absoluto y por compartir una misma convicción: el cuerpo no admite arrepentimientos.
+          </p>
+    </section>
+
+    <!-- Harry Duarte destacado -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+      <div class="lg:col-span-5">
+        <div class="relative w-full h-full min-h-[380px] rounded-3xl neu-card p-3.5 overflow-hidden">
+          <div class="relative w-full h-full rounded-2xl overflow-hidden neu-inset">
+            <img src="assets/img/hero-harry.png" alt="Retrato oficial de Harry Duarte, artista del tatuaje" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl neu-card bg-surface/90 backdrop-blur-md">
+              <p class="text-[10px] uppercase tracking-widest text-accent">Maestro Fundador</p>
+              <p class="font-display text-xl text-white uppercase mt-0.5">Harry Duarte</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-7 neu-card rounded-3xl p-6 md:p-10 flex flex-col justify-center">
+        <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-5 self-start">
+          Trayectoria
+        </div>
+        <h2 class="font-display text-3xl md:text-4xl text-white uppercase leading-tight tracking-tight">
+          23 años de devoción anatómica
+        </h2>
+        <p class="text-muted mt-5 leading-relaxed">
+          Formado en el rigor del dibujo clásico y en la exigencia de la piel como soporte, Harry Duarte ha construido
+          un lenguaje propio: negros absolutos, líneas de precisión milimétrica y composiciones pensadas para envejecer
+          con dignidad. No repite diseños, no delega sesiones y no trabaja con plantillas.
+        </p>
+        <p class="text-muted mt-4 leading-relaxed">
+          Su método combina boceto sobre anatomía viva, pausas obligatorias en piezas de larga duración y un control
+          estricto de saturación para que la obra conserve su profundidad después de la cicatrización.
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-7">
+          <div class="neu-inset rounded-2xl p-4 text-center">
+            <p class="font-display text-2xl text-white">+23</p>
+            <p class="text-[10px] uppercase tracking-widest text-outline mt-1">Años</p>
+          </div>
+          <div class="neu-inset rounded-2xl p-4 text-center">
+            <p class="font-display text-2xl text-white">3</p>
+            <p class="text-[10px] uppercase tracking-widest text-outline mt-1">Disciplinas</p>
+          </div>
+          <div class="neu-inset rounded-2xl p-4 text-center">
+            <p class="font-display text-2xl text-accent">1/1</p>
+            <p class="text-[10px] uppercase tracking-widest text-outline mt-1">Sin réplicas</p>
+          </div>
+          <div class="neu-inset rounded-2xl p-4 text-center">
+            <p class="font-display text-2xl text-white">100%</p>
+            <p class="text-[10px] uppercase tracking-widest text-outline mt-1">Diseño propio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo residente -->
+    <section class="w-full">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 px-2">
+        <div>
+          <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-2">
+            Equipo residente
+          </div>
+          <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">Artistas del Atelier</h2>
+        </div>
+        <p class="text-sm text-muted max-w-md leading-relaxed">Puedes solicitar a un artista concreto en el formulario de cita o dejar la asignación en manos de la curaduría del atelier.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="neu-card rounded-3xl p-5 flex flex-col sm:flex-row gap-5 items-start">
+          <div class="w-24 h-24 shrink-0 rounded-2xl neu-inset p-1.5 overflow-hidden">
+            <img src="assets/img/artista-valeria.jpg" alt="Retrato en blanco y negro de Valeria K., artista residente" class="w-full h-full object-cover rounded-xl">
+          </div>
+          <div class="flex-1">
+            <p class="text-[10px] uppercase tracking-widest text-accent">Fine Line &amp; Botánica</p>
+            <h3 class="font-display text-xl text-white uppercase mt-1">Valeria K.</h3>
+            <p class="text-xs text-muted mt-2 leading-relaxed">Especialista en línea capilar de 0.25 mm, botánica negra y micro-tipografía. Sesiones cortas de máxima concentración y trazo continuo.</p>
+            <div class="flex items-center justify-between mt-4 pt-4 border-t border-white/[0.04]">
+              <span class="text-[10px] uppercase tracking-wider text-outline">Cupos próximos: este mes</span>
+              <a href="agendar.html?artista=Valeria%20K." class="neu-button rounded-full px-4 py-2 text-[0.62rem] uppercase tracking-widest text-accent hover:text-white">Solicitar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="neu-card rounded-3xl p-5 flex flex-col sm:flex-row gap-5 items-start">
+          <div class="w-24 h-24 shrink-0 rounded-2xl neu-inset p-1.5 overflow-hidden">
+            <img src="assets/img/artista-mateo.jpg" alt="Retrato en blanco y negro de Mateo Thorne, artista residente" class="w-full h-full object-cover rounded-xl">
+          </div>
+          <div class="flex-1">
+            <p class="text-[10px] uppercase tracking-widest text-accent">Brutalist Blackwork</p>
+            <h3 class="font-display text-xl text-white uppercase mt-1">Mateo Thorne</h3>
+            <p class="text-xs text-muted mt-2 leading-relaxed">Saturación densa, ornamento brutalista y grandes formatos de torso y manga. Referente en coberturas y cover-ups de alto contraste.</p>
+            <div class="flex items-center justify-between mt-4 pt-4 border-t border-white/[0.04]">
+              <span class="text-[10px] uppercase tracking-wider text-outline">Cupos próximos: siguiente mes</span>
+              <a href="agendar.html?artista=Mateo%20Thorne" class="neu-button rounded-full px-4 py-2 text-[0.62rem] uppercase tracking-widest text-accent hover:text-white">Solicitar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Filosofía -->
+    <section class="neu-card rounded-3xl p-6 md:p-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5">
+          <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-3 self-start w-fit">
+            Filosofía
+          </div>
+          <h2 class="font-display text-3xl md:text-4xl text-white uppercase leading-none tracking-tight">
+            Sin trucos.<br>Sin concesiones.<br>
+            <span class="italic font-light text-3xl md:text-4xl text-accent">Solo rigor.</span>
+          </h2>
+          <div class="mt-7 p-6 rounded-2xl neu-inset border border-white/[0.02]">
+            <p class="font-display text-lg italic text-white leading-snug">"El cuerpo es el soporte más noble y exigente que existe en el arte visual. No admite arrepentimientos."</p>
+            <p class="text-[10px] uppercase tracking-widest text-accent mt-4">— Harry Duarte</p>
+          </div>
+        </div>
+        <div class="lg:col-span-7 space-y-4">
+          <div class="p-5 md:p-6 rounded-2xl neu-card-sm">
+            <div class="flex items-center gap-3.5 mb-2">
+              <div class="w-9 h-9 rounded-xl neu-inset grid place-items-center text-accent shrink-0">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">sanitizer</span>
+              </div>
+              <h3 class="font-display text-lg md:text-xl text-white uppercase">Esterilización y Grado Médico</h3>
+            </div>
+            <p class="text-xs md:text-sm text-muted pl-12 leading-relaxed">Autoclave de clase B, cabina de atmósfera controlada y materiales 100% descartables de un solo uso. Protocolo hospitalario certificado en cada sesión.</p>
+          </div>
+          <div class="p-5 md:p-6 rounded-2xl neu-card-sm">
+            <div class="flex items-center gap-3.5 mb-2">
+              <div class="w-9 h-9 rounded-xl neu-inset grid place-items-center text-accent shrink-0">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">architecture</span>
+              </div>
+              <h3 class="font-display text-lg md:text-xl text-white uppercase">Ergonomía &amp; Adaptabilidad Ósea</h3>
+            </div>
+            <p class="text-xs md:text-sm text-muted pl-12 leading-relaxed">El diseño se dibuja o ajusta sobre tu fisonomía viva, respetando líneas de tensión muscular y movimiento orgánico. Ninguna plantilla estándar.</p>
+          </div>
+          <div class="p-5 md:p-6 rounded-2xl neu-card-sm">
+            <div class="flex items-center gap-3.5 mb-2">
+              <div class="w-9 h-9 rounded-xl neu-inset grid place-items-center text-accent shrink-0">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">lock_clock</span>
+              </div>
+              <h3 class="font-display text-lg md:text-xl text-white uppercase">Privacidad Monástica</h3>
+            </div>
+            <p class="text-xs md:text-sm text-muted pl-12 leading-relaxed">Atelier cerrado a transeúntes: sin interrupciones ni espectadores. Solo el artista, la música curada y la concentración que exige la aguja.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="w-full">
+      <div class="mb-8 px-2">
+        <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-2">
+          Método de trabajo
+        </div>
+        <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">El Proceso en Cuatro Tiempos</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="neu-card rounded-3xl p-6 h-full">
+          <div class="w-9 h-9 rounded-2xl neu-inset grid place-items-center text-accent text-xs font-semibold mb-4">01</div>
+          <h3 class="font-display text-lg text-white uppercase">Consulta</h3>
+          <p class="text-xs text-muted mt-3 leading-relaxed">Conversamos concepto, zona, tamaño y presupuesto. Definimos si la pieza es viable y qué disciplina la sostiene mejor.</p>
+        </div>
+        <div class="neu-card rounded-3xl p-6 h-full">
+          <div class="w-9 h-9 rounded-2xl neu-inset grid place-items-center text-accent text-xs font-semibold mb-4">02</div>
+          <h3 class="font-display text-lg text-white uppercase">Boceto</h3>
+          <p class="text-xs text-muted mt-3 leading-relaxed">Diseño original dibujado para tu anatomía. Se ajusta sobre la piel el día de la sesión antes de cualquier punctura.</p>
+        </div>
+        <div class="neu-card rounded-3xl p-6 h-full">
+          <div class="w-9 h-9 rounded-2xl neu-inset grid place-items-center text-accent text-xs font-semibold mb-4">03</div>
+          <h3 class="font-display text-lg text-white uppercase">Sesión</h3>
+          <p class="text-xs text-muted mt-3 leading-relaxed">Cabina privada, material estéril y pausas programadas en piezas de larga duración. Café y música incluidos.</p>
+        </div>
+        <div class="neu-card rounded-3xl p-6 h-full">
+          <div class="w-9 h-9 rounded-2xl neu-inset grid place-items-center text-accent text-xs font-semibold mb-4">04</div>
+          <h3 class="font-display text-lg text-white uppercase">Cicatrización</h3>
+          <p class="text-xs text-muted mt-3 leading-relaxed">Set de curación para 14 días, guía de cuidados y seguimiento por WhatsApp ante cualquier duda.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="neu-card rounded-3xl p-8 md:p-12 text-center">
+      <div class="max-w-2xl mx-auto flex flex-col items-center gap-5">
+        <div class="neu-inset px-4 py-1.5 rounded-full text-accent text-[10px] uppercase tracking-widest">Agenda selectiva</div>
+        <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">Trabaja con nosotros</h2>
+        <p class="text-sm text-muted leading-relaxed">Cuéntanos tu idea y te respondemos por WhatsApp con disponibilidad, tiempos y presupuesto orientativo.</p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+          <a href="agendar.html" class="w-full sm:w-auto px-7 py-3.5 neu-button-primary rounded-2xl text-[0.7rem] uppercase tracking-widest flex items-center justify-center gap-2 hover:text-accent">
+            Agendar Cita
+            <span class="material-symbols-outlined text-base" aria-hidden="true">calendar_month</span>
+          </a>
+          <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="w-full sm:w-auto px-7 py-3.5 neu-button rounded-2xl text-muted hover:text-white text-[0.7rem] uppercase tracking-widest flex items-center justify-center gap-2">
+            WhatsApp Directo
+            <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="w-full bg-[#18191e] border-t border-white/[0.03] pt-14 pb-10 mt-16">
+  <div class="max-w-shell mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-white/[0.04]">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 rounded-xl neu-card flex items-center justify-center overflow-hidden p-1.5">
+            <img src="assets/img/logo.png" alt="Harry Duarte — Logo" class="w-full h-full object-contain">
+          </span>
+          <p class="font-display text-lg uppercase tracking-wider text-white">Harry Duarte</p>
+        </div>
+        <p class="text-xs text-outline max-w-xs leading-relaxed">Estudio privado del artista Harry Duarte. Bespoke haute-couture fine line y blackwork contemporáneo bajo rigurosa precisión estética.</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Atelier &amp; Ubicación</p>
+        <p class="text-xs text-muted">Valera, Estado Trujillo</p>
+        <p class="text-xs text-muted mt-1">Venezuela</p>
+        <p class="text-xs text-accent mt-3">Acceso exclusivo con cita previa</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Horario</p>
+        <p class="text-xs text-muted">Martes — Sábado: 11:00 — 20:00</p>
+        <p class="text-xs text-muted mt-1">Domingo &amp; Lunes: Cerrado / Convención</p>
+        <a href="agendar.html" class="inline-block text-xs text-accent hover:text-white transition-colors mt-3">Agendar una cita →</a>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Contacto Directo</p>
+        <p class="text-xs text-muted mb-4">Escríbenos por WhatsApp para consultar disponibilidad, presupuestos y reservas de flash.</p>
+        <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.65rem] uppercase tracking-widest text-accent hover:text-white">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
+          +58 412 053 7930
+        </a>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <p class="text-[11px] uppercase tracking-widest text-outline">© <span class="js-year"></span> Harry Duarte. Todos los derechos reservados.</p>
+      <p class="text-[11px] uppercase tracking-widest text-outline">Blackwork &amp; Fine Line Luxury</p>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast neu-card px-5 py-3.5 rounded-2xl text-sm text-bone"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
