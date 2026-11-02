@@ -326,7 +326,7 @@
             </div>
 
             <div class="relative w-full h-44 rounded-2xl overflow-hidden neu-inset p-1 border border-white/[0.03]">
-              <img src="assets/img/estudio.jpg" alt="Fotografía editorial de un tatuaje fine line en la piel" class="w-full h-full object-cover rounded-xl">
+              <img src="assets/img/estudio.svg" alt="Fotografía editorial de un tatuaje fine line en la piel" class="w-full h-full object-cover rounded-xl">
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1c21] via-transparent to-transparent"></div>
               <div class="absolute bottom-3 left-4">
                 <p class="text-[10px] text-white uppercase font-medium">Criterio curatorial</p>
@@ -359,7 +359,9 @@
           <span class="text-[0.7rem] uppercase tracking-wider text-white">El artista</span>
           <div class="neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
             <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
-              <img src="assets/img/hero-harry.png" alt="Harry Duarte" class="w-full h-full object-cover rounded-lg">
+              <video class="w-full h-full object-cover rounded-lg" muted loop playsinline preload="metadata" poster="assets/img/hero-harry.png">
+              <source src="assets/img/hero-video.mp4" type="video/mp4">
+            </video>
             </div>
             <div class="min-w-0">
               <p class="font-display text-base text-white uppercase">Harry Duarte</p>
@@ -431,6 +433,23 @@
                 <p class="text-sm text-white font-medium" id="selectedDateDisplay">—</p>
               </div>
               <span class="field-error" id="error-date">Selecciona una fecha disponible en el calendario.</span>
+            </div>
+            <div class="neu-card rounded-3xl p-3.5 overflow-hidden">
+              <div class="relative w-full aspect-video rounded-2xl overflow-hidden neu-inset">
+                <video class="w-full h-full object-cover" muted loop playsinline preload="metadata" poster="assets/img/hero-harry.png">
+                  <source src="assets/img/studio-atmosphere.mov" type="video/quicktime">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-transparent to-transparent opacity-60 pointer-events-none"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+                  <div>
+                    <p class="text-[10px] text-accent uppercase tracking-widest">Atelier Valera</p>
+                    <p class="text-xs text-white mt-0.5">Ambiente privado, música curada, concentración absoluta</p>
+                  </div>
+                  <button class="neu-button rounded-full w-10 h-10 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity" aria-label="Reproducir video">
+                    <span class="material-symbols-outlined text-lg" aria-hidden="true">play_circle</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

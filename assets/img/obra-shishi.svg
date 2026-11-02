@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#141519"/>
+      <stop offset="100%" style="stop-color:#0a0a0c"/>
+    </linearGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.02"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bgGrad)"/>
+  <rect width="800" height="1000" fill="#000" filter="url(#noise)" opacity="0.15"/>
+  <g fill="none" stroke="#dfc394" stroke-width="1.5" opacity="0.35">
+    <ellipse cx="400" cy="400" rx="160" ry="200" fill="#dfc394" fill-opacity="0.04"/>
+    <path d="M300 320 Q250 350 300 400 Q280 450 300 500" stroke-width="2" fill="#dfc394" fill-opacity="0.1"/>
+    <path d="M500 320 Q550 350 500 400 Q520 450 500 500" stroke-width="2" fill="#dfc394" fill-opacity="0.1"/>
+    <path d="M350 300 Q380 270 420 300 Q400 280 350 300" fill="#dfc394" fill-opacity="0.25"/>
+    <ellipse cx="360" cy="360" rx="25" ry="30" fill="#dfc394" fill-opacity="0.3"/>
+    <ellipse cx="440" cy="360" rx="25" ry="30" fill="#dfc394" fill-opacity="0.3"/>
+    <path d="M340 430 Q400 470 460 430" stroke-width="2"/>
+    <g stroke-width="0.8" opacity="0.4">
+      <path d="M280 350 L200 420"/>
+      <path d="M520 350 L600 420"/>
+      <path d="M250 480 L150 580"/>
+      <path d="M550 480 L650 580"/>
+      <path d="M300 550 L220 680"/>
+      <path d="M500 550 L580 680"/>
+    </g>
+    <text x="400" y="280" font-family="Georgia, serif" font-size="24" fill="#dfc394" text-anchor="middle" opacity="0.3">守護</text>
+    <text x="400" y="320" font-family="Georgia, serif" font-size="16" fill="#dfc394" text-anchor="middle" opacity="0.25">SHISHI</text>
+  </g>
+  <text x="400" y="950" font-family="Georgia, serif" font-size="14" fill="#dfc394" text-anchor="middle" opacity="0.5">Shishi Guardián • Oriental & Lettering</text>
+</svg>

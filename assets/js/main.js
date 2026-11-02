@@ -72,6 +72,31 @@
     spy.forEach(function (s) { observer.observe(s); });
   }
 
+  document.querySelectorAll("video").forEach(function (video) {
+    var btn = video.parentElement.querySelector("button[aria-label*='Reproducir'], button[aria-label*='Play']");
+    if (btn) {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = '<span class="material-symbols-outlined text-lg" aria-hidden="true">pause_circle</span>';
+        } else {
+          video.pause();
+          btn.innerHTML = '<span class="material-symbols-outlined text-lg" aria-hidden="true">play_circle</span>';
+        }
+      });
+      video.addEventListener("click", function () {
+        if (video.paused) {
+          video.play();
+          if (btn) btn.innerHTML = '<span class="material-symbols-outlined text-lg" aria-hidden="true">pause_circle</span>';
+        } else {
+          video.pause();
+          if (btn) btn.innerHTML = '<span class="material-symbols-outlined text-lg" aria-hidden="true">play_circle</span>';
+        }
+      });
+    }
+  });
+
   window.showToast = function (message) {
     var toast = document.getElementById("toast");
     if (!toast) { window.alert(message); return; }

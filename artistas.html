@@ -84,7 +84,9 @@
       <div class="lg:col-span-5">
         <div class="relative w-full h-full min-h-[380px] rounded-3xl neu-card p-3.5 overflow-hidden">
           <div class="relative w-full h-full rounded-2xl overflow-hidden neu-inset">
-            <img src="assets/img/hero-harry.png" alt="Retrato oficial de Harry Duarte, artista del tatuaje" class="w-full h-full object-cover">
+            <video class="w-full h-full object-cover" muted loop playsinline preload="metadata" poster="assets/img/hero-harry.png">
+              <source src="assets/img/hero-video.mp4" type="video/mp4">
+            </video>
             <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-transparent to-transparent opacity-80"></div>
             <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl neu-card bg-surface/90 backdrop-blur-md">
               <p class="text-[10px] uppercase tracking-widest text-accent">Maestro del atelier</p>
@@ -167,6 +169,57 @@
             </div>
             <h3 class="font-display text-lg text-white uppercase">Diseño 1 a 1</h3>
             <p class="text-xs text-muted mt-2 leading-relaxed">Trabaja contigo directamente desde la primera idea hasta el último aftercare.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO: El proceso en el atelier -->
+    <section class="w-full">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 px-2">
+        <div>
+          <div class="inline-flex items-center gap-2 neu-inset px-3 py-1 rounded-full text-outline text-[10px] uppercase tracking-widest mb-2">
+            En la cabina
+          </div>
+          <h2 class="font-display text-3xl md:text-4xl text-white uppercase tracking-tight">El Ritual de la Sesión</h2>
+        </div>
+        <p class="text-sm text-muted max-w-md leading-relaxed">
+          Cada sesión es un ritual privado: preparación estéril, boceto sobre piel, y ejecución sin interrupciones.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="neu-card rounded-3xl p-3.5 overflow-hidden">
+          <div class="relative w-full aspect-video rounded-2xl overflow-hidden neu-inset">
+            <video class="w-full h-full object-cover" muted loop playsinline preload="metadata" poster="assets/img/hero-harry.png">
+              <source src="assets/img/artist-portrait.mov" type="video/quicktime">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-transparent to-transparent opacity-60 pointer-events-none"></div>
+            <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+              <div>
+                <p class="text-[10px] text-accent uppercase tracking-widest">Retrato del Artista</p>
+                <p class="text-xs text-white mt-0.5">Harry Duarte en su atelier, Valera</p>
+              </div>
+              <button class="neu-button rounded-full w-10 h-10 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity" aria-label="Reproducir video">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">play_circle</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="neu-card rounded-3xl p-3.5 overflow-hidden">
+          <div class="relative w-full aspect-video rounded-2xl overflow-hidden neu-inset">
+            <video class="w-full h-full object-cover" muted loop playsinline preload="metadata" poster="assets/img/hero-harry.png">
+              <source src="assets/img/artwork-detail.mov" type="video/quicktime">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-transparent to-transparent opacity-60 pointer-events-none"></div>
+            <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+              <div>
+                <p class="text-[10px] text-accent uppercase tracking-widest">Detalle de Obra</p>
+                <p class="text-xs text-white mt-0.5">Blackwork geométrico & fine line 0.25mm</p>
+              </div>
+              <button class="neu-button rounded-full w-10 h-10 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition-opacity" aria-label="Reproducir video">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">play_circle</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

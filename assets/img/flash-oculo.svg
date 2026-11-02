@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#141519"/>
+      <stop offset="100%" style="stop-color:#0a0a0c"/>
+    </linearGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.02"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="600" height="750" fill="url(#bgGrad)"/>
+  <rect width="600" height="750" fill="#000" filter="url(#noise)" opacity="0.15"/>
+  <g fill="none" stroke="#dfc394" stroke-width="2" opacity="0.55">
+    <rect x="150" y="150" width="300" height="400" rx="20" fill="#dfc394" fill-opacity="0.03"/>
+    <ellipse cx="300" cy="250" rx="80" ry="60" fill="none" stroke-width="2"/>
+    <ellipse cx="300" cy="250" rx="50" ry="35" fill="#dfc394" fill-opacity="0.2"/>
+    <ellipse cx="300" cy="250" rx="20" ry="15" fill="#dfc394" fill-opacity="0.4"/>
+    <path d="M300 310 L300 550" stroke-width="2"/>
+    <g stroke-width="1.5" opacity="0.5">
+      <path d="M200 350 Q250 380 300 350 Q350 380 400 350"/>
+      <path d="M200 420 Q250 450 300 420 Q350 450 400 420"/>
+      <path d="M200 490 Q250 520 300 490 Q350 520 400 490"/>
+    </g>
+    <path d="M180 300 L180 550" stroke-width="1.5" opacity="0.3"/>
+    <path d="M420 300 L420 550" stroke-width="1.5" opacity="0.3"/>
+    <polygon points="300,150 280,200 320,200" fill="#dfc394" fill-opacity="0.3"/>
+  </g>
+  <text x="300" y="720" font-family="Georgia, serif" font-size="12" fill="#dfc394" text-anchor="middle" opacity="0.5">Ocular Arcana • Geometric Brutalism</text>
+</svg>
