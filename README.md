@@ -9,7 +9,7 @@ El formulario de cita no usa backend: valida los datos en el cliente y abre What
 | Ruta | Contenido |
 |---|---|
 | `index.html` | Hero, estilos del atelier, obras destacadas, manifiesto, testimonios, CTA |
-| `portafolio.html` | Galería con filtros (`Todos / Blackwork / Dark Realism / Ornamental / Flash`), lightbox y botón *Apartar* |
+| `portafolio.html` | Archivo de obra en video con filtros (`Todos / Realismo / Blackwork / Anime / Color / Cover-Up`), lightbox de video y consulta directa |
 | `artistas.html` | Harry Duarte (único artista del atelier), trayectoria, filosofía y proceso |
 | `cuidados.html` | Cicatrización fase por fase, señales de alarma, FAQ y protocolo |
 | `agendar.html` | Solicitud de cita en 4 pasos: tipo de obra → detalles → fecha/artista → contacto y confirmación |
@@ -29,7 +29,8 @@ El formulario de cita no usa backend: valida los datos en el cliente y abre What
     │   ├── main.js           # menú móvil, scrollspy, año dinámico, toast
     │   ├── portafolio.js     # filtros, lightbox, ?filtro=
     │   └── agendar.js        # pasos, validaciones, calendario, envío WhatsApp
-    └── img/                  # imágenes locales (logo, hero, piezas, artistas)
+    ├── img/                  # logo, retrato del artista, posters de video y favicon
+    └── video/                # clips web H.264 optimizados (portafolio y secciones)
 ```
 
 ## Ejecutar en local
@@ -47,8 +48,9 @@ También funciona con `npx serve .` o `python -m http.server 8000`.
 
 - **Número de WhatsApp:** `assets/js/agendar.js` → `var WHATSAPP_NUMBER = "584120537930";`
 - **Anticipo, horario y días cerrados:** `assets/js/agendar.js` (calendario y mensaje final)
-- **Piezas del portafolio:** editar las tarjetas `.gallery-card` en `portafolio.html`
-- **Imágenes:** reemplazar los archivos en `assets/img/`
+- **Obras del portafolio:** editar las tarjetas `.gallery-card` en `portafolio.html`
+- **Videos web:** reemplazar los MP4 de `assets/video/` y sus posters en `assets/img/posters/`
+- **Originales de cámara:** permanecen en `assets/img/` y están ignorados por Git y Vercel; no se despliegan
 
 ## Despliegue
 
@@ -59,6 +61,8 @@ vercel --prod
 ```
 
 Framework: *Other* · Output directory: `.` · Build command: *(vacío)*.
+
+Los videos originales de cámara se excluyen del despliegue con `.vercelignore`; solo se publican los clips optimizados de `assets/video/`.
 
 ## Stack
 

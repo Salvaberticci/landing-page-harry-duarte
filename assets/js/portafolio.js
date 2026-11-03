@@ -11,6 +11,10 @@
       var cats = (card.getAttribute("data-category") || "").split(/\s+/);
       var show = value === "all" || cats.indexOf(value) !== -1;
       card.style.display = show ? "" : "none";
+      if (!show) {
+        var video = card.querySelector("video");
+        if (video) video.pause();
+      }
       if (show) visible++;
     });
     buttons.forEach(function (btn) {
@@ -21,7 +25,7 @@
       btn.classList.toggle("text-muted", !active);
       btn.setAttribute("aria-pressed", active ? "true" : "false");
     });
-    if (counter) counter.textContent = "Mostrando " + visible + " de " + cards.length + " piezas";
+    if (counter) counter.textContent = "Mostrando " + visible + " de " + cards.length + " obras";
     var empty = document.getElementById("galleryEmpty");
     if (empty) empty.classList.toggle("hidden", visible !== 0);
   }
@@ -40,13 +44,29 @@
   /* ---------- Lightbox ---------- */
   var lightbox = document.getElementById("lightbox");
   var lbImage = document.getElementById("lightboxImage");
+  var lbVideo = document.getElementById("lightboxVideo");
   var lbTitle = document.getElementById("lightboxTitle");
   var lbMeta = document.getElementById("lightboxMeta");
 
-  function openLightbox(src, title, meta) {
+  function openLightbox(src, title, meta, type, poster) {
     if (!lightbox) return;
-    lbImage.src = src;
-    lbImage.alt = title;
+    if (type === "video" && lbVideo) {
+      lbImage.classList.add("hidden");
+      lbVideo.classList.remove("hidden");
+      lbVideo.poster = poster || "";
+      if (lbVideo.getAttribute("src") !== src) lbVideo.src = src;
+      lbVideo.currentTime = 0;
+      var playPromise = lbVideo.play();
+      if (playPromise && playPromise.catch) playPromise.catch(function () {});
+    } else if (lbImage) {
+      if (lbVideo) {
+        lbVideo.pause();
+        lbVideo.classList.add("hidden");
+      }
+      lbImage.classList.remove("hidden");
+      lbImage.src = src;
+      lbImage.alt = title;
+    }
     lbTitle.textContent = title;
     lbMeta.textContent = meta || "";
     lightbox.classList.add("is-open");
@@ -57,16 +77,23 @@
     if (!lightbox) return;
     lightbox.classList.remove("is-open");
     document.body.classList.remove("no-scroll");
+    if (lbVideo) {
+      lbVideo.pause();
+      lbVideo.removeAttribute("src");
+      lbVideo.load();
+      lbVideo.classList.add("hidden");
+    }
+    if (lbImage) lbImage.classList.remove("hidden");
   }
 
   document.querySelectorAll("[data-lightbox]").forEach(function (el) {
     el.addEventListener("click", function () {
-      openLightbox(el.getAttribute("data-src"), el.getAttribute("data-title"), el.getAttribute("data-meta"));
+      openLightbox(el.getAttribute("data-src"), el.getAttribute("data-title"), el.getAttribute("data-meta"), el.getAttribute("data-type"), el.getAttribute("data-poster"));
     });
     el.addEventListener("keydown", function (e) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        openLightbox(el.getAttribute("data-src"), el.getAttribute("data-title"), el.getAttribute("data-meta"));
+        openLightbox(el.getAttribute("data-src"), el.getAttribute("data-title"), el.getAttribute("data-meta"), el.getAttribute("data-type"), el.getAttribute("data-poster"));
       }
     });
   });

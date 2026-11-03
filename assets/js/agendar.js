@@ -420,9 +420,8 @@
   var pieza = params.get("pieza");
   if (pieza) {
     var concept = document.getElementById("conceptDescription");
-    var precio = params.get("precio");
     if (concept && !concept.value) {
-      concept.value = "Reserva de flash: " + pieza + (precio ? " — $" + Number(precio).toLocaleString("es-MX") + " MXN" : "");
+      concept.value = "Proyecto inspirado en: " + pieza + ". Quiero conversar sobre una pieza original.";
     }
   }
 

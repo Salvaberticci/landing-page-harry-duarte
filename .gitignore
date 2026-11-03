@@ -4,6 +4,11 @@ node_modules/
 .DS_Store
 Thumbs.db
 
+# Videos fuente de cámara (los clips web optimizados están en assets/video)
+assets/img/*.mp4
+assets/img/*.MOV
+assets/img/*.mov
+
 # Borradores de diseño (fuentes originales, no desplegadas)
 agendar_cita_consulta_de_tatuaje_neumorfismo/
 inicio_tatuajes_de_autor_neumorfismo/

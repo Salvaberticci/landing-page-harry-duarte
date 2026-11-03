@@ -97,6 +97,24 @@
     }
   });
 
+  /* Reproducción diferida: solo los videos visibles consumen datos. */
+  var lazyVideos = document.querySelectorAll("video[data-autoplay-on-view]");
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (lazyVideos.length && "IntersectionObserver" in window && !reduceMotion) {
+    var videoObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var video = entry.target;
+        if (entry.isIntersecting) {
+          var playPromise = video.play();
+          if (playPromise && playPromise.catch) playPromise.catch(function () {});
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.35 });
+    lazyVideos.forEach(function (video) { videoObserver.observe(video); });
+  }
+
   window.showToast = function (message) {
     var toast = document.getElementById("toast");
     if (!toast) { window.alert(message); return; }

@@ -29,7 +29,7 @@
     </a>
     <nav class="hidden xl:flex items-center gap-1 neu-inset px-3 py-1.5 rounded-full">
       <a class="nav-link" href="index.html">Inicio</a>
-      <a class="nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+      <a class="nav-link" href="portafolio.html">Portafolio</a>
       <a class="nav-link" href="artistas.html">Artista &amp; Filosofía</a>
       <a class="nav-link" href="cuidados.html">Cuidados</a>
     </nav>
@@ -55,7 +55,7 @@
       </button>
     </div>
     <a class="mobile-nav-link" href="index.html">Inicio</a>
-    <a class="mobile-nav-link" href="portafolio.html">Portafolio &amp; Flash</a>
+    <a class="mobile-nav-link" href="portafolio.html">Portafolio</a>
     <a class="mobile-nav-link" href="artistas.html">Artista &amp; Filosofía</a>
     <a class="mobile-nav-link" href="cuidados.html">Cuidados</a>
     <a class="mobile-nav-link is-active mt-4 neu-button-primary justify-center text-white hover:text-accent" href="agendar.html">Agendar Cita</a>
@@ -145,20 +145,20 @@
           </label>
 
           <label class="cursor-pointer group">
-            <input class="sr-only" type="radio" name="project_type" value="flash" data-label="Flash Disponible">
+            <input class="sr-only" type="radio" name="project_type" value="color" data-label="Color / Anime">
             <div class="neu-option h-full p-6 rounded-2xl neu-card flex flex-col justify-between border border-white/[0.04]">
               <div>
                 <div class="flex justify-between items-center mb-4">
                   <div class="w-10 h-10 rounded-xl neu-flat grid place-items-center text-outline group-hover:text-white transition-colors">
-                    <span class="material-symbols-outlined text-xl" aria-hidden="true">auto_awesome</span>
+                    <span class="material-symbols-outlined text-xl" aria-hidden="true">palette</span>
                   </div>
                   <span class="text-[10px] text-outline px-2.5 py-1 rounded-full neu-inset">02</span>
                 </div>
-                <h3 class="font-display text-lg text-white uppercase mb-1">Flash Disponible</h3>
-                <p class="text-xs text-muted leading-relaxed">Obra de archivo creada por el atelier. Se tatúa una sola vez para garantizar exclusividad al coleccionista.</p>
+                <h3 class="font-display text-lg text-white uppercase mb-1">Color / Anime</h3>
+                <p class="text-xs text-muted leading-relaxed">Piezas cromáticas, anime, botánica y coberturas. Color saturado con lectura anatómica y acabado de autor.</p>
               </div>
               <div class="pt-4 mt-4 flex items-center justify-between border-t border-white/[0.04]">
-                <span class="text-[10px] uppercase text-outline tracking-wider">One-off archive</span>
+                <span class="text-[10px] uppercase text-outline tracking-wider">Chromatic work</span>
                 <span class="w-8 h-8 rounded-full neu-button grid place-items-center text-outline group-hover:text-white">
                   <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
                 </span>
@@ -326,7 +326,7 @@
             </div>
 
             <div class="relative w-full h-44 rounded-2xl overflow-hidden neu-inset p-1 border border-white/[0.03]">
-              <img src="assets/img/estudio.jpg" alt="Fotografía editorial de un tatuaje fine line en la piel" class="w-full h-full object-cover rounded-xl">
+              <img src="assets/img/posters/atelier-valera-wide.jpg" alt="Cabina privada del atelier de Harry Duarte" class="w-full h-full object-cover rounded-xl">
               <div class="absolute inset-0 bg-gradient-to-t from-[#1a1c21] via-transparent to-transparent"></div>
               <div class="absolute bottom-3 left-4">
                 <p class="text-[10px] text-white uppercase font-medium">Criterio curatorial</p>
@@ -359,9 +359,7 @@
           <span class="text-[0.7rem] uppercase tracking-wider text-white">El artista</span>
           <div class="neu-flat rounded-2xl p-4 border border-white/[0.04] flex items-center gap-4">
             <div class="w-14 h-14 rounded-xl neu-inset overflow-hidden shrink-0 p-0.5">
-              <video class="w-full h-full object-cover rounded-lg" muted loop playsinline preload="metadata" poster="assets/img/hero-harry.png" autoplay>
-              <source src="assets/img/hero-video.mp4" type="video/mp4">
-            </video>
+              <img src="assets/img/hero-harry.png" alt="Retrato de Harry Duarte" class="w-full h-full object-cover rounded-lg">
             </div>
             <div class="min-w-0">
               <p class="font-display text-base text-white uppercase">Harry Duarte</p>
@@ -436,8 +434,8 @@
             </div>
             <div class="neu-card rounded-3xl p-3.5 overflow-hidden">
               <div class="relative w-full aspect-video rounded-2xl overflow-hidden neu-inset">
-                <video class="w-full h-full object-cover" muted loop playsinline preload="metadata" poster="assets/img/hero-harry.png" autoplay>
-                  <source src="assets/img/studio-atmosphere.mov" type="video/mp4">
+                <video class="w-full h-full object-cover" muted loop playsinline preload="metadata" poster="assets/img/posters/atelier-valera-wide.jpg" autoplay aria-label="Ambiente del atelier de Harry Duarte">
+                  <source src="assets/video/atelier-valera.mp4" type="video/mp4">
                 </video>
                 <div class="absolute inset-0 bg-gradient-to-t from-[#141519] via-transparent to-transparent opacity-60 pointer-events-none"></div>
                 <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
@@ -644,11 +642,11 @@
         <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Horario</p>
         <p class="text-xs text-muted">Martes — Sábado: 11:00 — 20:00</p>
         <p class="text-xs text-muted mt-1">Domingo &amp; Lunes: Cerrado / Convención</p>
-        <a href="portafolio.html" class="inline-block text-xs text-accent hover:text-white transition-colors mt-3">Ver flash disponibles →</a>
+        <a href="portafolio.html" class="inline-block text-xs text-accent hover:text-white transition-colors mt-3">Ver archivo de obra →</a>
       </div>
       <div>
         <p class="text-xs uppercase tracking-widest text-white mb-4 font-semibold">Contacto Directo</p>
-        <p class="text-xs text-muted mb-4">Escríbenos por WhatsApp para consultar disponibilidad, presupuestos y reservas de flash.</p>
+        <p class="text-xs text-muted mb-4">Escríbenos por WhatsApp para consultar disponibilidad, presupuestos y proyectos.</p>
         <a href="https://wa.me/584120537930" target="_blank" rel="noopener" class="neu-button inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-[0.65rem] uppercase tracking-widest text-accent hover:text-white">
           <span class="material-symbols-outlined text-base" aria-hidden="true">chat</span>
           +58 412 053 7930
